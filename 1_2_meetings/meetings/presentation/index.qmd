@@ -1,0 +1,16 @@
+---
+title: Embedding presentations
+description: "How to embed presentations in your quarto document"
+date: "2024-15-11"
+categories: [presentations, example]
+---
+
+RevealJS is super powerful and has tons of amazing features. Even better, we can embed such presentations into quarto documents since they can be rendered to html.
+
+Here's how to do it:
+
+<iframe src="../../../presentations/pres1.html" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+
+Definetely make sure to read the Quarto RevealJS documentation as this is not the focus of this template. You can find it [here](https://quarto.org/docs/presentations/revealjs/index.html) 
+
+I'm pretty sure you can embed other types of interactive content with this method as well, but have not had the chance to try it yet!

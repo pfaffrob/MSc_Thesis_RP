@@ -1,0 +1,193 @@
+---
+description: ""
+linestretch: 1.5
+
+filters: [remove_title.lua, chapter_prefix.lua]
+link-citations: true
+
+#suppress-bibliography: true
+header-includes:
+  - \renewcommand{\chapterformat}{Chapter~\thechapter\autodot\enskip}
+  - \renewcommand{\chaptermarkformat}{Chapter~\thechapter\autodot\enskip}
+  - \usepackage{fontspec}
+  - \setmainfont{Arial}
+  - \setsansfont{Arial}
+  - \usepackage{anyfontsize}
+  - \fontsize{11}{16}\selectfont
+  - \usepackage{etoolbox}
+  - \AtBeginEnvironment{tabular}{\vspace{12pt}\small}
+  - \AtBeginEnvironment{longtable}{\vspace{12pt}\small}
+  - \usepackage{booktabs}
+  - \usepackage{graphicx}
+  - \usepackage[nottoc,notlof,notlot]{tocbibind}
+  - \PassOptionsToPackage{table}{xcolor}
+  - \usepackage{xcolor}
+  - \renewcommand{\bibsection}{}
+  - \usepackage[a4paper, top=2cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+  - \usepackage{tocloft}
+  - \setcounter{tocdepth}{2}
+  - \setlength{\cftbeforetoctitleskip}{0pt}
+  - \setlength{\cftbeforeloftitleskip}{0pt}
+  - \setlength{\cftbeforelottitleskip}{0pt}
+  - \setlength{\cftaftertoctitleskip}{1pt}
+  - \setlength{\cftafterloftitleskip}{1pt}
+  - \setlength{\cftafterlottitleskip}{1pt}
+  - \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+  - \usepackage[all]{nowidow}
+  - \usepackage{scrhack} # Add scrhack to improve compatibility with other packages
+  - \usepackage{caption}
+  #- \linespread{1.5} # Adjust the number as needed (1.2 = 120% line spacing)
+  - \captionsetup[figure]{font={footnotesize}, labelfont={bf}}
+  - \captionsetup[table]{font={footnotesize}, labelfont={bf}}
+ 
+  - \captionsetup[sfig]{font={footnotesize}, labelfont={bf}}
+  - \DeclareCaptionLabelFormat{sfiglabelformat}{#1#2}
+  - \captionsetup[sfig]{labelformat=sfiglabelformat, labelsep=colon}
+  - \AtBeginDocument{\renewcommand{\thesfig}{\arabic{sfig}}}
+  
+  - \captionsetup[stbl]{font={footnotesize}, labelfont={bf}}
+  - \DeclareCaptionLabelFormat{stbllabelformat}{#1#2}
+  - \captionsetup[stbl]{labelformat=stbllabelformat, labelsep=colon}
+  - \AtBeginDocument{\renewcommand{\thestbl}{\arabic{stbl}}}
+
+  - \renewcommand{\theequation}{\arabic{equation}}
+  - \counterwithout{equation}{chapter}
+
+  - \usepackage{chngcntr}
+  - \counterwithout{figure}{chapter}
+  - \counterwithout{table}{chapter}
+  - \usepackage{xurl}
+
+format:
+  pdf:
+    documentclass: scrreprt
+    template-partials: 
+      - partials/citations.tex
+      - partials/tables.tex
+    keep-tex: true
+    top-level-division: chapter
+    shift-heading-level-by: 0
+    number-sections: true
+    number-depth: 2
+    colorlinks: false
+    citecolor: black
+    linkcolor: black
+    include-before-body:
+      - 00_cover.tex
+      - 01_imprint.tex
+    header-includes:
+      - \makeatletter
+      - \renewcommand{\thechapter}{}
+      - \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+      - \renewcommand{\chapterformat}{}
+      - \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+      - \patchcmd{\@starttoc}{\begin{center}}{}{}{}
+      - \makeatother
+      - \RedeclareSectionCommand[
+          beforeskip=6pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{16pt}{18pt}\bfseries\sffamily,
+        ]{chapter}
+      - \RedeclareSectionCommand[
+          beforeskip=4pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{14pt}{16pt}\bfseries\sffamily,
+        ]{section}
+      - \RedeclareSectionCommand[
+          beforeskip=3pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{12pt}{14pt}\bfseries\sffamily,
+        ]{subsection}
+      - \RedeclareSectionCommand[
+          beforeskip=2pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{11pt}{12pt}\bfseries\sffamily,
+        ]{subsubsection}
+      - \RedeclareSectionCommand[
+          beforeskip=1pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{11pt}{12pt}\bfseries\sffamily,
+        ]{paragraph}
+      - \RedeclareSectionCommand[
+          beforeskip=1pt plus 1pt minus 1pt,
+          afterskip=1pt plus 1pt minus 1pt,
+          font=\fontsize{11pt}{12pt}\bfseries\sffamily,
+        ]{subparagraph}
+---
+
+{{< include ../1_1_text/00_abstract.qmd >}}
+
+\newpage
+
+# Attestation of Authorship {.unnumbered .unlisted}
+
+I hereby declare that this submission is my own work and that, to the best of my knowledge and belief, it contains no material previously published or written by another person (except where explicitly defined in the acknowledgements), nor used artificial intelligence tools or generative artificial intelligence tools (unless it is clearly stated and referenced, along with the purpose of use), nor material which to a substantial extent has been submitted for the award of any other degree or diploma of a university or other institution of higher learning.
+
+
+\vspace{0.5cm}
+Signed:
+
+![](../2_1_figures/Unterschrift_Robin_Pfaff.png){layout="[0.25, -0.75]"}
+
+Robin Pfaff
+
+Date: 19/02/2026
+
+\vspace{2cm}
+
+# Statement of Contribution {.unnumbered .unlisted}
+
+All data collection, processing, and analysis were completed by R.P., with assistance from G.H. and R.R. during UAV operations; initial LiDAR data processing was completed by G.H., with further processing and analysis by R.P. The thesis was written by R.P., with feedback from R.R. and G.H.
+
+\newpage
+
+# Acknowledgements {.unnumbered .unlisted}
+
+I would like to thank the following people who provided guidance and support during this thesis project. My supervisors, Dr. Rebecca Rogers and Graham Hinchliffe, for their continuous feedback, support, and encouragement throughout the project, especially for the open and uncomplicated communication. I would also like to thank Derek Craig (formerly of [Kaipātiki Project](https://kaipatiki.org.nz)) for initial guidance on site selection, and Maria Valkova ([Kaipātiki Project](https://kaipatiki.org.nz)), Kathy McCormack (Friends of Bushglen Reserve), and Robert Beresford (Bioeconomy Science Institute) for directing me to the *S. maire* during fieldwork and providing me with valuable contextual information around *S. maire*. I would also like to thank Jamie Chapman and Andrea Campos, not only for their help with UAV operations, but also for their ongoing mental support. Furthermore, I would like to thank Laurin Frey for his help with proofreading and feedback. Finally, and most of all, I would like to thank my Godmother (Therese Rudolph von Rohr) and my parents (Doris and René Pfaff) without whom I would not have been able to realise my dream of pursuing a Master's degree in beautiful Aotearoa.
+
+
+\newpage
+
+
+\listoffigures
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+{{< include ../1_1_text/01_introduction.qmd >}}
+{{< include ../1_1_text/02_method.qmd >}}
+
+
+
+
+{{< include ../1_1_text/03_results.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include ../1_1_text/04_discussion.qmd >}}
+{{< include ../1_1_text/05_conclusions.qmd >}}
+
+
+
+
+
+{{< pagebreak >}}
+
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+
+
+{{< include ../1_1_text/06_annex.qmd >}}
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Myrtle Rust</title>
+<link>https://pfaffrob.github.io/1_2_meetings/</link>
+<atom:link href="https://pfaffrob.github.io/1_2_meetings/index.xml" rel="self" type="application/rss+xml"/>
+<description>some SEO information about your blog</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Fri, 10 Apr 2026 12:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/1_2_meetings/meetings/1_meeting1/index.html}</title>
+  <dc:creator>Robin Pfaff</dc:creator>
+  <link>https://pfaffrob.github.io/1_2_meetings/meetings/1_meeting1/</link>
+  <description>{B4F502887207:/1_2_meetings/meetings/1_meeting1/index.html}</description>
+  <category>kickoff</category>
+  <guid>https://pfaffrob.github.io/1_2_meetings/meetings/1_meeting1/</guid>
+  <pubDate>Fri, 10 Apr 2026 12:00:00 GMT</pubDate>
+  <media:content url="https://pfaffrob.github.io/2_2_assets/launch.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/1_2_meetings/meetings/3_writing_progress_nov/index.html}</title>
+  <dc:creator>Robin Pfaff</dc:creator>
+  <link>https://pfaffrob.github.io/1_2_meetings/meetings/3_writing_progress_nov/</link>
+  <description>{B4F502887207:/1_2_meetings/meetings/3_writing_progress_nov/index.html}</description>
+  <category>writing</category>
+  <guid>https://pfaffrob.github.io/1_2_meetings/meetings/3_writing_progress_nov/</guid>
+  <pubDate>Tue, 04 Nov 2025 11:00:00 GMT</pubDate>
+  <media:content url="https://pfaffrob.github.io/2_2_assets/writing.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/1_2_meetings/meetings/3_first_findings/index.html}</title>
+  <dc:creator>Robin Pfaff</dc:creator>
+  <link>https://pfaffrob.github.io/1_2_meetings/meetings/3_first_findings/</link>
+  <description>{B4F502887207:/1_2_meetings/meetings/3_first_findings/index.html}</description>
+  <category>data capture</category>
+  <category>method</category>
+  <guid>https://pfaffrob.github.io/1_2_meetings/meetings/3_first_findings/</guid>
+  <pubDate>Wed, 23 Jul 2025 12:00:00 GMT</pubDate>
+  <media:content url="https://pfaffrob.github.io/2_2_assets/drone.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/1_2_meetings/meetings/2_meeting2/index.html}</title>
+  <dc:creator>Robin Pfaff</dc:creator>
+  <link>https://pfaffrob.github.io/1_2_meetings/meetings/2_meeting2/</link>
+  <description>{B4F502887207:/1_2_meetings/meetings/2_meeting2/index.html}</description>
+  <category>data capture</category>
+  <category>H+S</category>
+  <guid>https://pfaffrob.github.io/1_2_meetings/meetings/2_meeting2/</guid>
+  <pubDate>Wed, 02 Apr 2025 11:00:00 GMT</pubDate>
+  <media:content url="https://pfaffrob.github.io/2_2_assets/drone.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/1_2_meetings/meetings/presentation/index.html}</title>
+  <dc:creator>Robin Pfaff</dc:creator>
+  <link>https://pfaffrob.github.io/1_2_meetings/meetings/presentation/</link>
+  <description>{B4F502887207:/1_2_meetings/meetings/presentation/index.html}</description>
+  <category>presentations</category>
+  <category>example</category>
+  <guid>https://pfaffrob.github.io/1_2_meetings/meetings/presentation/</guid>
+  <pubDate>Mon, 10 Mar 2025 11:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

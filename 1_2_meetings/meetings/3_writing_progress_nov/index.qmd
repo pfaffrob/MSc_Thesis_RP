@@ -1,0 +1,31 @@
+---
+title: Writing
+description: ""
+image: "../../../2_2_assets/writing.png"
+date: 2025-11-5
+categories: [writing]
+---
+
+# Agenda
+- [ ] progress overview
+    + Layout mostly complete
+    + Outline
+    + First half of introduction complete ("identifying the problem")
+    + Method about flight capture and ground truthing complete
+    + discussion about ms calibration 
+    + Started working on multiple figures and writing sown bullet points for discussion.
+
+- [ ] **To discuss**
+    - difficult to statistically quantify these minimal results
+    - "in partial fulfilment of..." what else is there needed?
+
+
+
+- [ ] next step:
+    - complete method, results (and discussion as bullet points) until end of next week (14/11/25)
+
+
+# Meeting Notes
+
+- is it even possible to set the exposure setting s for the MS drone
+

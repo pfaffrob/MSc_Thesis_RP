@@ -1,0 +1,71 @@
+---
+config:
+  theme: neutral
+  themeVariables:
+    fontSize: 16
+---
+
+flowchart TB
+   subgraph main[" "]
+      direction TB
+         A["UAV-flights"]
+         B["Ground truthing"]
+         C(["Point cloud"])
+         D(["RGB orthomosaic"])
+         E(["MS orthomosaic"])
+         F2["Data normalisation"]
+         F["Inidividual tree segmentation"]
+         G["Draw labels"]
+         H["Deep learning <br> (semantic segmentation)"]
+      end
+         A --> C & D & E
+         B ---> G
+         C --> F2 --> F
+         D & E --> G
+         G --> H
+
+         A:::fieldwork
+         B:::fieldwork
+         C:::lidar
+         D:::raster
+         E:::raster
+         F:::cloudcompare
+         F2:::python
+         G:::fieldwork
+         H:::python
+
+    %% === LEGEND START ===
+ subgraph legend["**Legend**"]
+    direction LR
+        L1(["Raster data"])
+        L2(["LiDAR data"])
+        L3["Fieldwork / Manual work"]
+        L4["Python"]
+        L5["CloudCompare"]
+  end
+     L1:::raster
+     L2:::lidar
+     L3:::fieldwork
+     L4:::python
+     L5:::cloudcompare
+    %% === LEGEND END ===
+
+    %% === CLASS DEFINITIONS START ===
+    
+    %% === DATA TYPES ===
+    classDef vector fill:#B3D1FF, stroke:transparent, stroke-width:2px;  %% Vector data
+    classDef raster fill:#FFB3B3, stroke:transparent, stroke-width:2px; %% Raster data
+    classDef lidar fill:#AEE9C1, stroke:transparent, stroke-width:2px;  %% LiDAR data
+    
+    %% === PROCESS TYPES ===
+    classDef fieldwork fill:#c1e3e2, stroke:transparent, stroke-width:2px; %% %% Fieldwork / Manual work
+    classDef python fill:#FFF2A8, stroke:transparent, stroke-width:2px;     %% Python
+    classDef metashape fill:#FFD1A8, stroke:transparent, stroke-width:2px;  %% Agisoft Metashape
+    classDef cloudcompare fill:#D6B3FF, stroke:transparent, stroke-width:2px; %% CloudCompare
+    classDef djiterra fill:#c1cfe3, stroke:transparent, stroke-width:2px; %% DJI Terra
+    
+    
+    %% === SUBGRAPH STYLES ===
+    style main stroke:none,fill:transparent;
+    style legend stroke:none,fill:#f0f0f0;
+    %% === CLASS DEFINITIONS END ===

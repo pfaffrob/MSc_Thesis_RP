@@ -1,0 +1,37 @@
+---
+title: "Meetings"
+description: "some SEO information about your blog"
+
+# here are settings for creating listing pages (like a list of posts for a blog)
+listing:
+  id: main-listing # i give my listing a id/name, so that i can place it in the document
+  type: grid # there are multiple options here: default, grid, table, custom
+  grid-columns: 3 # for grid only
+  fields: [image, date, title, description, reading-time] #fields to show in the listing
+  #for more information on these: https://quarto.org/docs/websites/website-listings.html#listing-fields
+  contents: meetings/*/*.qmd # the folder where the pages you want to list are stored
+  sort: "date desc" #sorted by date in descending order (newest first)
+  sort-ui: [title, date] #add ui for sorting by the fields given in the []
+  filter-ui: [title, date] #add ui for filtering by the fields given in the []
+  categories: true # gives a list of categories, if you tagged some posts with categories
+  feed: true # generates an rss feed for your listing
+  page-size: 3 # how many posts per page
+
+# additional settings
+format: 
+  html:
+    toc: false
+---
+
+<style>
+.description {
+    display: none;
+}
+</style>
+
+
+:::{#main-listing}
+:::
+
+
+

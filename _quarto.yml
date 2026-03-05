@@ -1,0 +1,209 @@
+project:
+  type: website
+
+  #output directory sets in which folder quarto will put the rendered files
+  #remember that quarto will take the .qmd files and turn them into .html files
+  output-dir: "docs"
+  
+  # render targets - basically which files should (not) be rendered by quarto
+  render:
+    - "index.qmd" # this will render all .qmd files in your project
+    - "1_1_text/index.qmd" # this will render all .qmd files in the 1_1_text folder and its subfolders
+    - "1_4_pdf/index.qmd"
+    - "1_4_pdf/complete_thesis.qmd"
+    #- "1_8_presentations/index.qmd"
+    #- "1_9_documentation/index.qmd"
+  # check https://quarto.org/docs/websites/index.html#render-targets for more information
+
+author: Robin Pfaff
+title: "Myrtle Rust"
+date: "2025-12"
+date-format: "YYYY-MM"
+number-depth: 3
+bibliography: 2_4_bibliography/myrtle_rust_corrected.bib
+csl: 2_4_bibliography/apa.csl
+nocite: |
+  @Austropucciniapsidii2017, @Syzygiummaire1979, @djiZenmuseL2, @beresfordSymptomdevelopment2020
+filters:
+  - 2_4_bibliography/convert_wikilinks.py
+  - acronyms
+  - wordcount
+wordcount:
+  count-code-blocks: false
+  count-inline-code: false
+
+jupyter: python3
+
+website: # Here are some settings for your website
+# mind the indentation of everything below this line
+  comments: 
+    hypothesis: # allows to add comments to your website using https://web.hypothes.is/
+      theme: clean
+      openSidebar: false
+
+  twitter-card: true # makes pretty link previews when sharing on Twitter
+  search: false # false, because your website will likely not be huge
+  back-to-top-navigation: true # adds a button to quickly scroll back to the top of the page
+  
+  favicon: "2_2_assets/favicons/favicon.ico" #create a favicon for example at favicon.io and link it here
+  # A favicon is a small image that appears in the browser tab when your website is open. 
+  
+  # Here is how you could organize the footer of your website
+  # You can use any icons from https://icons.getbootstrap.com/ (they come with quarto)
+  page-footer:
+    left:  # appears on the left side of the footer
+      - text: AUT # icon
+        href: https://www.aut.ac.nz/ # link
+        aria-label: Auckland University of Technology # accessibility label
+    center:  # appears in the center of the footer
+      - text: "Master Thesis R. Pfaff"
+        href: https://github.com/pfaffrob/myrtle_rust
+    right: # appears on the right side of the footer
+      - text: "This website was built with Quarto."
+        href: https://quarto.org/
+        aria-label: Quarto
+      
+  open-graph: true # makes pretty link previews when sharing on Facebook
+  
+  # change this to the URL of your website
+  site-url: "https://pfaffrob.github.io"
+  
+  # This is the name of your website as it will appear on the browser tab/ search engines
+  title: "Myrtle Rust"
+
+
+  navbar: # the navbar is the navigation menu at the top of your website
+  # technically, there is also the sidebar, but its more useful for large sites
+    logo: "2_2_assets/favicons/android-chrome-512x512.png"
+    # above is how you can add a logo to your navbar, in this case its the favicon
+    
+    # you can structure your navbar just like the footer
+    # you can add icons the same way as in the footer
+    # note the syntax for adding pages that are not the homepage
+    # essentially, you create a folder with the name of the page and put an index.qmd file in it
+    # this helps keep your project organized, and makes your links look cleaner
+    left:
+      - href: index.qmd
+        text: "Home"
+      # - href: 1_1_text/index.qmd
+      #   text: "Text"
+      # - text: "Research Sites"  
+      #   menu:
+      #     - text: "Research Sites"
+      #       href: 3_3_mission_planning/research_sites.qmd
+      #     - text: "RS3 Guide"
+      #       href: 3_3_mission_planning/RS3_guide.qmd
+      # - href: 1_2_meetings/index.qmd
+      #   text: "Meetings"
+      - href: 1_4_pdf/index.qmd
+        text: "PDF"
+      # - href: 1_8_presentations/index.qmd
+      #   text: "Presentations"
+      # - href: 3_4_contacts/contacts.qmd
+      #   text: "Contacts"
+      # - href: 7_1_publishing/index.qmd
+      #   text: "Publishing"
+      # - href: 1_9_documentation/index.qmd
+      #   text: "Documentation"
+
+# This is to set the name of your blog in the Rss feed
+blog:
+  title: "Robin's Blog"
+
+# these are additional settings for pages
+format:
+  html:
+    code-line-numbers: true #code fields should have line numbers
+    smooth-scroll: true #makes clicking on a section link scroll smoothly to that location
+    
+    # choose theme(s) from this list  https://quarto.org/docs/output-formats/html-themes.html
+    theme: darkly # you can eaither have just this one theme
+
+    # or you can have one for light mode and dark mode like this:
+    # theme:
+    #   dark: [darkly, theme-dark.scss]
+    #   light: [flatly, theme-light.scss]
+    #   you can omit the .scss files from above 
+    #   but you would need to create them if you wanted to customize the theme colors
+    #   for more information go to https://quarto.org/docs/output-formats/html-themes.html#customizing-themes
+    #   search for "sass" on quarto.org if link broken    
+    
+    # this file is where almost all of your general website customization will happen
+    css: styles.css
+
+    # Some settings for section links that appear on pages with multiple headers
+    toc: true 
+    toc-location: left
+    toc-title: "Sections:"
+    toc-depth: 4
+    toc-expand: 2
+
+    # Title blocks are the big colored boxes at the top of pages
+    # they contain information you set in the YAML front matter of your .qmd files
+    # so things like title, author, date, etc.
+    # choose one of four styles: default, plain, manuscript, or none
+    title-block-style: manuscript
+    title-block-banner: true
+    title-block-banner-color: "#000000" # hexcode color, set this to whatever you like
+    title-block-categories: true #this will show categories if you have set some. Not supported by manuscript style
+
+    # These are settings for code blocks if you have them
+    code-fold: show # code is shown by default but can be hidden via a button 
+    # code-fold options: true, false, show
+    code-copy: true # adds a button to copy code to clipboard
+    code-overflow: scroll # code lines will scroll to the side if they are too long
+    # this can alternatively be set to wrap
+    code-block-border-left: true #makes it easier to see that line numbers are not part of the code
+    highlight-style: atom-one # choose a theme for code from here https://quarto.org/docs/output-formats/html-code.html#highlighting
+
+    # Some additional miscellaneous settings
+    footnotes-hover: true # footnotes will appear when you hover over the footnote number
+    reference-location: margin # references will appear in the margin so right next to the text
+    link-external-newwindow: true # external links will open in a new tab; external meaning other websites
+    #link-external-filter: "^https://www\\.pfaffrob\\.github\\.io"
+    #link-external-filter: ^(?:http:|https:)\/\/www\.quarto\.org\/custom
+    link-external-filter: '^pfaffrob\.github\.io' # links to this website will not open in a new tab
+    canonical-url: true # makes sure that your site will not seem spammy to search engines
+    fig-responsive: true # render figures to a 'natural' size rather than fixing the size
+    lightbox: true #this adds links to images that will open them in a larger preview
+    unsafe: true # this will allow you to use unsafe HTML, CSS, and JS in your website
+
+crossref:
+  custom:
+    - kind: float
+      reference-prefix: Contact
+      key: con
+      caption-location: bottom
+      latex-env: con
+    - kind: float
+      key: sfig
+      latex-env: sfig
+      reference-prefix: "**Figure S**"
+      space-before-numbering: false
+      latex-list-of-description: List of Supplementary Figures
+    - kind: float
+      key: stbl
+      latex-env: stbl
+      reference-prefix: "**Table S**"
+      caption-location: top
+      space-before-numbering: false
+      latex-list-of-description: List of Supplementary Tables
+
+
+
+# these settings will ensure that you cache outputs
+# if you have included any code (e.g. r, python, julia) that quarto will run    
+# this is very useful as you otherwise would need to wait for all code to execute
+# every time you render your website
+# However, this is not perfect and can cause issues if parts of your code changed
+# if you have issues, you can try deleting the cache files
+execute:
+  cache: false
+  freeze: false # only re-run code if code has changed
+  echo: false # do not show code blocks by default
+
+acronyms:
+  style: long-short
+  insert_loa: false
+  fromfile:
+    - ./1_1_text/acronyms.yml

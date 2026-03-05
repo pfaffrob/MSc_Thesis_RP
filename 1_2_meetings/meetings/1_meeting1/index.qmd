@@ -1,0 +1,458 @@
+---
+title: Meeting 1
+description: "Kickoff"
+image: "../../../2_2_assets/launch.png"
+date: 2025-16-11
+categories: [kickoff]
+---
+# Meeting Notes
+
+The meeting focused on the methodology and logistics around the drone assesment to enable data collection. Key points included the need for proper protocols and approvals, the use of existing sites and iNaturalist data for training, and the importance of manual identification. The importance of having enough training data was discussed. Practical training for drone operations was scheduled, as well as issues around enabling atti-mode on the DJI mavic pro 2. The next steps are drone course completion, site mapping, and project management planning.
+
+# Tasks generated from the Meeting
+
+```{python}
+#| echo: false
+
+import sys
+import os
+
+# Add the directory containing 'my_module.py' to sys.path
+module_path = os.path.abspath(os.path.join('../..'))
+if module_path not in sys.path:
+    sys.path.append(module_path)
+
+# Now you can import the module
+from todoist import fetch_todoist_tasks
+
+fetch_todoist_tasks(labels=["meeting"], created_after="2025-03-01", created_before="2025-03-31")
+```
+
+
+# Recording
+
+<div style="text-align: center;">
+  <audio controls style="width: 100%;">
+    <source src="transcripts_recordings/20250306.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+# Transcript
+
+Robin  0:00  
+Quit slow, all right, yeah, but they're by for the methodology, or, like, the proposed idea. Yes, it was fine, yeah,
+
+Rebecca  0:10  
+yeah. So the things that were kind of flagged was one that of ground truthing and not going through and spreading things. Doesn't mean that we couldn't do that, but we would have to then look at what are the proper protocols for get approvals from Council and things like that. So but in lieu of that, we can fly in close and get photos like Graham was talking about. And the other thing that he flagged as well was around training data and having enough training data. So we mentioned in there that we can we've got the sites that you already know about that we've shared with us, and the stuff that's on iNaturalist, those are the kind of things that we'll be using to do the getting enough training data. And realistically, we don't know how much training target you need until you start. Yeah, trying it. But,
+
+Graham  0:57  
+yeah, absolutely. But it may be that something like, you know, the close in, you do some, you know, close in flights, move these areas. So then you've got like eyes on. You could then compare that against with your like pose, or whatever data sets you want to be doing on. So then you can do go to things like manual identification. It's just all about with these computer methods? Do you need have a lot of training? So that is, like, normally, the big crux, yes, just making sure that you have access to that time. And, yeah,
+
+Robin  1:32  
+yeah, I think that's that's mainly the biggest issue I currently see, is to like, the ability to actually identify it and to classify the data I have as training data. I think that's what I Yeah, yeah, exactly
+
+Rebecca  1:48  
+which I mean concerned about now is good, you know that that's the challenge. You've done it before with other ones. Yeah, can be I
+
+Graham  1:56  
+think the good thing is, is something like the way you split it with the Bucha burst as like,
+
+Unknown Speaker  2:05  
+detection on this model
+
+Graham  2:08  
+is a really good idea, because even just at least cars like it's very prevalent, we can go and find that pretty much very, very easily. You'll be able to locate that for creation of training samples, and even just starting that as a base point to be like, can we train to detect that versus, you know, everything else? Yeah, could be an excellent starting point. And then you can worry about the subdivision of infected versus not effective, yeah,
+
+Robin  2:41  
+yeah, just to constantly narrow it down and be more and more specific,
+
+Graham  2:46  
+yeah, because that the way you're doing it, that way is like
+
+Unknown Speaker  2:51  
+you'll basically always have enough
+
+Graham  2:54  
+goodies in the bag to write about and make a Report, and then you just have to answer more questions. Kind of answer more
+
+Rebecca  3:04  
+questions. Yeah, and I think with that, it helps that well, as far as I understand, you're not necessarily that the myrtle rust and that side of isn't exactly the part that excites you more than doing the AI, the deep learning, I mean, and the methodology, because it means we can pivot if we have to, apply it to somewhere around Bucha or whatever we need to do. But it's
+
+Graham  3:27  
+also nice to have a state then go with, like a community engagement that we want to have. So obviously it's like questions that people are having. So yeah, I think it's a really good one, but it just gives us like it's we're not trying to go in so deep at the beginning that if that fails, yeah, then we're kind of
+
+Robin  3:48  
+stuck. There's always ways around it, or almost guaranteed, there's something to write about. Yeah, yeah,
+
+Unknown Speaker  3:56  
+that's all sweet.
+
+Graham  3:59  
+Yeah. We haven't done any further multi spectral flights yet, but that's something we can to spin up. Yeah, and it might be, we're gonna get you with the training,
+
+Unknown Speaker  4:14  
+and we can just kind of do it
+
+Graham  4:16  
+together. Yeah, I would be getting you to do the skills, and that's even better.
+
+Robin  4:21  
+Yeah, that's what I'm what I'm after. Yeah, would really be great. And also about that note you once mentioned, I can maybe borrow one of small drones, yes, to just practice around. So might there be a chance that it could take one with me today.
+
+Graham  4:38  
+What we need to do is you need to, we want you to check that out to you effectively. The process we have done in the past, for students to do, to take the drones, is to we would go and do an active flight session with you, yeah,
+
+Unknown Speaker  4:58  
+for a few hours to. Into the park.
+
+Graham  5:01  
+Give you all the basic run down. So then you we've told you the rules. We can get you flying, doing some basic operations so that we can see that you can take off, you can run safely. Follow instructions at that point, then it's like, we're okay. To be like, Okay, now you can check out the equipment, and then you can just be doing some practice in a controlled environment to be giving you the experience. Because with the with the drone training, there will be like, kind of like a practical flight test. Yeah, you need to have you I was ready for that for
+
+Rebecca  5:49  
+so on that. Then, what days you free?
+
+Robin  5:55  
+I'm usually I'm quite flexible. Yeah, there's just one week I need to probably occupy my work like the more specific
+
+Rebecca  6:03  
+question then would be Wednesday or Thursday? Next week? Yeah? Availability? Yeah,
+
+Robin  6:07  
+sure, yeah, next week is totally fine, both days work, whatever is better for you.
+
+Unknown Speaker  6:18  
+Now I'm easier than
+
+Rebecca  6:29  
+but then if there's any specific AUT things, then that'll be, that'll be Graham, yeah,
+
+Unknown Speaker  6:37  
+so your admin lead, or
+
+Unknown Speaker  6:40  
+no, we kind of, what
+
+Rebecca  6:44  
+if anything falls on me, yeah, but I will be using grain right to help me a thing. So yeah, wherever, just always kind of CC both of us and things anyway is the best bet. But
+
+Graham  6:55  
+yeah, in terms of either supervision split, Rebecca is the primary, yes,
+
+Rebecca  7:00  
+oh, that was one of the other things that we changed and all that, because it was 80 confusing way that they do things. I'm down as primary. He's down as secondary, rather than CO supervision, yeah, the CO supervision one here is like 50 split, yeah, yeah. And the prior, the primary, and, I mean co supervisor here, apparently the more that would be like your admin versus your research. That's what Brad the way Brad, he said it was weird, though, anyway, right? The point is, I'm primary, so, I mean, it falls
+
+Robin  7:29  
+back on Yeah, but CC both, I will have
+
+Unknown Speaker  7:33  
+to confirm things anyway,
+
+Unknown Speaker  7:35  
+because they involve
+
+Graham  7:39  
+their own operation. So thing, so it always just keeps everyone to know what's going on.
+
+Unknown Speaker  7:51  
+And then,
+
+Unknown Speaker  7:54  
+yeah, in terms of, like, the training, that can
+
+Unknown Speaker  7:58  
+be all fine. We'll get you sorted out. They
+
+Graham  8:02  
+can get I will just get you running with like, a Mavic two, yeah, because then that's the flight operations. And then when we need to, we can go to the multi spectral, yeah, stuff, the only change we'll have to make, like, I think I've done it already on this drone, I'll double check is that when you do like the flight test, they want you to be able to control a drone in what's called, like anti mode. So that's where it will
+
+Unknown Speaker  8:36  
+have an altitude lock,
+
+Graham  8:38  
+but it would drift with the wind. Yeah, it's not being fixed in a position with a GPS, right? So you fly up and then just whatever's happening with the wind, like the drone
+
+Unknown Speaker  8:51  
+will counter the wind. So
+
+Graham  8:53  
+Right? You effectively have to be thinking in truly space about how to counter the wind, yeah, to hold position. I think it's a bit old school, to be honest, because it was around like this is when drones didn't necessarily have GPS lock functionality. Well,
+
+Rebecca  9:07  
+it's also if you lose DPS. Very rarely happens these days, yes, but
+
+Unknown Speaker  9:15  
+it does have RTK in it.
+
+Graham  9:18  
+The Mavic twos, they don't have RT. They have GPS, yeah, but just not RT keys, right?
+
+Rebecca  9:24  
+Yeah. The idea is that if your drone loses GPS signal because of interference, anything you can still control and land. Yeah. That's why they want you to fly in addy mode. The problem is, a lot of the drones now don't even have an Addy mode. There's no way to force it into any mode, but you can with the three for
+
+Unknown Speaker  9:40  
+sure, I've done a
+
+Graham  9:45  
+software hack to turn in instead of, like, I think, sort of like the sports mode, yeah, I put that into mode. You can do that. Can you help to access it? Yeah? And actually, it. It does have its uses, like, not necessarily, maybe the ecological ones, but if you're doing smooth, like cinematics, people will often do it that way, so you'll go like, upwind of your thing and just let the wind carries Are you while you're looking?
+
+Unknown Speaker  10:16  
+Because I kind of have cine mode anyway, because
+
+Graham  10:18  
+before, yeah, you if you're if you're manually moving it, you just want it to be a bit jerky. The wind gives a very smooth right one niche, but you will get to learn how to do that. And it just means that, you know, if we say, okay, you don't have to fly in the circle. You really have to start thinking about, Okay, this way, I'm going to go a bit with the winds. I'm gonna have to have less. This way, I'm gonna have to have more, yeah, to combat that. So it's all good for, like, the 3d thinking, yeah, situational awareness, of course. So yeah, we'll get you to get you checked out with that. No problem. Sweet.
+
+Unknown Speaker  10:59  
+And it'll be good to we'll have a
+
+Unknown Speaker  11:03  
+double check in with Derek at some point, just to kind of
+
+Graham  11:07  
+say what we give an updated time where we are, where we going to be going in terms of the different sites. Yeah, we've got some of those contacts for the Rangers that control this park. So we can give them a heads up again. Just say, Hey, we're going coming to do this. Is there anything else that you want to do over there? Yeah, they can play. So that's all good. And we have a student on our third year, student who's doing a capstone project with myself what's a capstone is that some there, it's like two papers across the year where they're engaging with a scientific inquiry. It's supposed to be like more independent research. So it's kind of like mini dissertation. Oh, yeah, internship, or whatever, like an internship, or it's almost like an internship with within the school, or with a Yeah, partner,
+
+Robin  12:06  
+well, they're like a thesis. Will it be a thesis, data report at the end, with more
+
+Graham  12:10  
+of, like, experiential portfolio, they come out like this, what I worked on, right? And then they can develop things like, they go give a presentation, yeah? So we have a student, Renee, who's, she's very capable and is very keen on kind of, like community outreach, ecology. She's done geospatial stuff, so we're going to deploy her on, again, on some of the Copa Tiki
+
+Unknown Speaker  12:39  
+data, or making them some maps,
+
+Unknown Speaker  12:43  
+lock that down. Maybe she can create some training data for
+
+Graham  12:47  
+you're supposed to like, they're not supposed to be, like, conducting primary research. That's the main thing, right? They're supposed to be like, given the data set, and then it's like, they can do some stuff with it. They do some analysis, yeah, rather than like us, then having to, like, go and do experiments, right? It'll be good to think, like, if you need, like, the system or some help with identifying things, quite good. Like,
+
+Robin  13:12  
+yeah, they have some kind of have some insight and research done.
+
+Graham  13:16  
+Supposed to be like a, like, a teaser into like, this is what it might be like if you do post
+
+Rebecca  13:22  
+grad, yeah, yeah. Like, if we were independent research organization, should be coming in and just seeing what it's like to work doing things like
+
+Robin  13:31  
+those mini job which can be delegated to someone, yeah, yeah,
+
+Unknown Speaker  13:40  
+yeah. Sounds good. You have ideas.
+
+Rebecca  13:43  
+So for now, for a couple of things, one would be the drone, course, did you get an email from me that I forwarded through to you? No,
+
+Robin  13:51  
+maybe at London, then a chunk, when did you
+
+Unknown Speaker  13:55  
+yesterday? And it could have, because it was like a
+
+Unknown Speaker  13:59  
+had an email attached to the email. And
+
+Robin  14:03  
+weird. It also could be it was to my student account. It
+
+Rebecca  14:07  
+could also be that I sent, may have sent it to the like staff version,
+
+Unknown Speaker  14:12  
+that one's not active anymore. Yeah, that
+
+Rebecca  14:13  
+I wondered if I sent it to the wrong one. I wasn't sure if that comes to you still or not. Just check your junk, and otherwise I'll forward it through
+
+Unknown Speaker  14:22  
+nothing in the chunk.
+
+Rebecca  14:29  
+No, I don't have a mail and saying it now I'm looking by center, I see nothing so promising. Okay, good to know. I Yeah, that
+
+Unknown Speaker  14:59  
+was the. Yeah, I think
+
+Rebecca  15:02  
+that they do that that should still be attached to you. You might be able to get it really reactivated, reactivated so that you can in case people would email you with that. But I thought your name works still,
+
+Robin  15:14  
+anyway, just my login doesn't work anymore, yeah, but I thought like the
+
+Rebecca  15:19  
+your one with your first and last name still comes to you guys, so maybe it doesn't
+
+Robin  15:30  
+know the first and last names was just created based on the staff account
+
+Rebecca  15:37  
+as well where, like your staff ones, you didn't get keep and yeah, when you started using it, and then people would email you on it, Yep, cool. Just Got it. Got it cool. So open up the attached email. Let's make sure it all works.
+
+Unknown Speaker  15:52  
+Access, course, yes,
+
+Rebecca  15:56  
+and then copy that password, because you'll need that the email, the username should auto fill, paste that in and make yourself a new password, and Then we'll sort out the other parts of that
+
+Rebecca  16:22  
+I'm just sang too much on the weekend, and it's still coming back, and it's not going to probably come back. Hence funny this weekend. Never going to get my voice back. Did invalid.
+
+Robin  16:43  
+Oh, it didn't cope you after to and sign
+
+Unknown Speaker  16:59  
+Password Manager. Yeah,
+
+Rebecca  17:07  
+we change password managers, and it's driving me crazy. Oh, no, how to use the new one properly? It's like, more secure than the old one. Yeah, that I can never get into it, like, use your code that we gave you and figure
+
+Robin  17:21  
+it out. I can figure it out every time. There we go. So you should have your course, yes,
+
+Rebecca  17:30  
+that's that one great, awesome 101. Course, cool. So you will need to contact your own trust and get your details on that updated, though, because it checks your salary at the moment. Oh, right. And because she booked, she did, yeah, sorry, did the ordering for it. So you'll need to contact them and get your details and your email updated. They might send you through anything I've talked told Sally, if anything comes to their email, to forward it to me and I'll pass it on to you. Yeah, maybe like, how to book in your flight tests, that kind of stuff. But if you contact them as soon as possible, get rid just explain through an organization that the wrong details are put in. Can you update it? If they need anything? Just let me know or figure it out. But you can start working through that. Now. Cool. That will be also good for next week.
+
+Unknown Speaker  18:19  
+Yeah, should be, what is it about? Two days
+
+Rebecca  18:21  
+where it'll be some of days of oh, you wouldn't have done the 101 on either, where neither of us have done it.
+
+Unknown Speaker  18:30  
+Students on this course, yeah.
+
+Rebecca  18:33  
+So work through the theory, yeah. And then then we can do the flying together, and then give you a drone to practice with. So that's that one. Yeah, cool. From there you're, you're officially started now, aren't you? Yes, yeah, yes, couple of days ago. Cool. So the other things that I've got on my list to say that might be good to start working on. Is one for us talking about the locations. You've got, all those coordinates and everything and the details of them. So I think it would be worth going through and kind of mapping out those sites. Yeah,
+
+Robin  19:13  
+I was thinking about visiting all locations tomorrow. Okay. Yeah. Cool, perfect.
+
+Rebecca  19:17  
+Yeah. So Matt, Matt, have a look at them. And once while you start going through the course, it'll presumably tell you at some point about how to use what's it called airshare to check sites, and how you can tell whether what the restrictions and things are on them. We kind of know it some of them, but it'd be worth you going through and understanding what the restrictions are for each of those. Right?
+
+Unknown Speaker  19:40  
+Be quite nice to really kind of
+
+Graham  19:45  
+take this as an opportunity to learn the kind of like the flight planning operations side of things. So with airshare, the main thing is that you'll go on there and you'll see the different sides with what. What overlapping players are on there, whether it's no pi, which probably the main one, which is the
+
+Unknown Speaker  20:09  
+Air Force Base,
+
+Graham  20:12  
+others, and again, you can get permission here to fly things in advance. And then,
+
+Unknown Speaker  20:20  
+more practically,
+
+Graham  20:23  
+where we would want to be standing to have for like, take off and landing visibility. So what we need to do is have good visibility over the airspace where the drone would be operating, right So, and this is where you kind of go to town with a bit of like GIS work, you know, I would, I
+
+Rebecca  20:45  
+can show you an example. I just sent to John matuki. Link, the other day as an example. I setting up this for machu pic. Link. We're going to go do some flights. You can do it in different ways. This was just so I could share it with them easily. But I was mapping out where our flight areas, and as an example, kind of our take off and landing, where the pilot would be, where our spotter would be. This one, because we have to fly over the road to get to start doing it. I just wanted somewhere where you could crash land, essentially put out having to fly over the road. And there's also a power line here. So that was just to remind me that there's a power line. So you can do something, some version of this kind of planning for your sites, which when you go out, that's a good, a good what I did when he took me out to these ones, just with my phone at each location, I put a pin on Google Maps. Took some photos to give me an idea so I could remember I further down here. I didn't, didn't have signals. I didn't do it so well. So I had to kind of just guess a little bit. But for this one, that's why that's mapped out the most. I was like, okay, pin. There was a pin here. Took some photos, planned out the flight, so that when you go, you've got a bit of a it might change, but at least you got a general plan, yeah,
+
+Graham  22:03  
+yeah. One thing I would maybe look at would be to you could grab the LIDAR data the area,
+
+Unknown Speaker  22:12  
+yeah, surface model, train model,
+
+Graham  22:16  
+then you've got like a 3d view of the area. They can really start to be thinking about where, if I'm standing here, will I have good visibility? And
+
+Rebecca  22:24  
+I actually ended up doing that while it was on Google Earth there. I did it in flight hub. It was actually really good. I really liked flight hub because you could do the annotations and the mapping.
+
+Graham  22:34  
+Yeah. So we'll get, we'll get you added on to enter. I just
+
+Rebecca  22:38  
+did it on my own login for this point, but it can be a way for you free software.
+
+Graham  22:45  
+So it's a DJI, there's a free version of it, and then we can link through to a kind of enterprise account that we've got. So I think I've created a we can make a project, add people to the project, then we can actually, or even all see it and the flat plans, yeah, and you can kind of take them. So this would be, like a router that will be
+
+Unknown Speaker  23:08  
+handy, yeah, I actually you can drop in your, like,
+
+Graham  23:10  
+kmls and stuff. So if you just say, spitballing some stuff in Google Earth, or, you know, in Google Maps, you export, you can bring it into this, yeah, from here, we can actually make some actual flight paths, or even just flight areas, which we then download into the
+
+Unknown Speaker  23:32  
+controllers, yeah, for the actual flying so
+
+Rebecca  23:40  
+did The actual flight planning, so now I could go, okay, the garden hour is worth the flying. I'll need a couple of batteries, or that one's a bit of a guess, because I don't know about the flight heights for it, but yeah, you have a play around with DJI flight hub, if you want. Yeah, it's really cool. Really liked it actually, because it does a little longer, yeah, like, usually I'd have to do it. We would have done the stuff and drone deploy for training and things. We could actually do it through this really good so you
+
+Robin  24:04  
+drew the outlines via Google Maps exported, so
+
+Rebecca  24:08  
+you could actually do it in here. So it was the annotations. Was actually the all of that, spotters and everything. And then I exported those so you can hit through the camera easier to share to them, because I wouldn't have wanted to try to teach them how to use this, but I could send them that link, and it was way easier. The link they actually got was even simpler. But I did say they can go in and edit if they wanted to, but I didn't think they would really want to, really they just looked in and said, That looks cool, sounds good.
+
+Graham  24:41  
+Or you could publish it as a web map. There's a whole bunch of different but yeah, so
+
+Rebecca  24:45  
+if you want to start having a think about that kind of stuff, especially if you're going out to the sites, I think that's a good, good starting point. And you could also do the mapping out the actual loan locations from iNaturalist of I mean, put a cow. Limitation in general, but also the Nolan Myrtle rust runs would probably also be a good idea. So essentially, just start building your map of what we're
+
+Robin  25:11  
+going to do. So what I was thinking about, before I jump too much into detail, is I want to have a good think about like project management, like how to take notes, how to organize everything, how I want to structure my days, yeah, set some standards for myself before really jumping. Yeah. When I say, do these things
+
+Rebecca  25:33  
+the next steps, definitely. That's a good, very good approach. A lot of people skip it. Yeah, so yeah, make a plan for how you're going to do things first, and then you can start jumping into these kind of things. The other one for when you're ready for it is the journal search. And I can send you some of the stuff I was just making notes of things looking at journal search to figure out. And that can come down to how you structure things, what you're kind of aiming to write based on, like, what kind of journal, whether you're going to publish or not. That's up to. As you go through, you can decide and see how you go.
+
+Robin  26:07  
+But would be nice. Like, definitely my goal, if it's possible,
+
+Unknown Speaker  26:11  
+we would support you. Yeah, the
+
+Graham  26:17  
+Yeah, like, the idea is generally to with a with a Masters wide research
+
+Robin  26:23  
+Yeah, yeah. And that's also why we decided on manuscript format too, right? And
+
+Rebecca  26:27  
+I mean, it's good for us, it's good for you, so we'll obviously support and encourage you to do that. And one way that I think can really help facilitate that is something that my supervisor got me to do early on, and I mentioned to you before start deciding what you want to publish in what journal, and write towards that from the beginning. So to do that, and I say, I'll send it through, go start looking at some of the potential journals. Look at their aims and scope. Look at their if there's any upcoming special issues. Is another good one, because they're really easy to publish in. If there happens to be one that's related to what we're doing, I'll look at these things too, but look at their rankings. Especially, I don't know how it works here with q1 journals, if we get extra funding and support for fees and things for them, but I think they often are, well
+
+Graham  27:14  
+either way, like, if we've got any excess in the budget, yeah, we've just then we just tweak the budget and say, Okay, we're gonna use
+
+Rebecca  27:23  
+publication fees always come in too, but you can figure that out. And then once you've narrowed down a few, have a look at some of their recent publications to see how they wrote, how they were published, and what they look like. And then obviously author instructions on how things are laid out. And that's the bigger one. Once you pick and we can change, but once you pick one or two from the beginning, structure your writing based on how some direction, yeah, and just speed everything up and make it way more likely that you'll publish at the end of it, yeah? Because that can be a long, dragged out process of reformatting everything when you could have just done it from the start. Just
+
+Robin  27:56  
+to make clear, would like be the publishing like, outside the scope of the thesis. Or would that be part of the thesis? Like, might it be handing in the thesis by what mid November and then publishing takes until probably March or so the following year? Yeah, yeah. Exactly. You
+
+Unknown Speaker  28:15  
+need to, like, submit, yeah,
+
+Rebecca  28:17  
+or have the intention of submitting to be submitted. It
+
+Graham  28:21  
+should be kind of a publishable stage, yeah? But it doesn't have to be published, right?
+
+Unknown Speaker  28:29  
+Submitted as well, yeah? Submitted or the stage of submission. It
+
+Rebecca  28:31  
+doesn't even say that, actually, because we've been talking about recently with someone, it's the intention to publish as all you technically need. But that's not what we want, like you want to publish.
+
+Graham  28:44  
+Obviously, in the wind with the with the publishers, we don't have any control, and it can take
+
+Rebecca  28:58  
+but the benefit of having things that are already published or in the process, means that you already have feedback on them. It makes reviews easier. Yes, if it's published, it's unlikely to be by the end of the year, but if it was, then your reviewers for your thesis are going to go well, it's already published. Some of them will give you feedback anyway, but we can't change anything,
+
+Graham  29:18  
+because it's a full Masters, it's we have time like external reviewers. Oh yeah, looking at your Oh really, oh yeah. So whether we might be people from other institutions in New Zealand or abroad or whatever, yeah, do that. So, you know, if we, if you want to have like smooth sailing with them, you can say, well, it's already been reviewed and published. Well, I definitely
+
+Unknown Speaker  29:45  
+know that, and
+
+Rebecca  29:48  
+that's the benefit as well of looking at other journal articles that have already been published and writing even from the beginning of like what methods you're going to use and what analysis find a couple of examples that already. Publish and essentially copy the way that they were doing. Yeah, because it's already been gone through the review process doesn't always mean it's good. There's few journals in particular that I would say, if you got any journal that has M DPI on it, which is drones, for example, be a little critical of whether they were reviewed really well or not, because they might always it doesn't mean that they're not good, but they get through quickly, yes, but if they already published, you've got a precedent for saying, Well, this is how, this is why I did it this way. So if someone questions it, you can go, Well, this publication did it, it was already approved. That's why I did it that way. The

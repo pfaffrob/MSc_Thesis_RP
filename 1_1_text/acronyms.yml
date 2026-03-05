@@ -1,0 +1,173 @@
+---
+acronyms:
+  keys:
+  #### Species
+    - key: AP
+      shortname: "*A. psidii*"
+      longname: "*Austropuccinia psidii*"
+      style: longnoshort-short
+      showinlist: false
+    - shortname: MR
+      longname: myrtle rust
+      style: long-long
+      showinlist: false
+    - key: SM
+      shortname: "*S. maire*"
+      longname: "*Syzygium maire*"
+      plural:
+        shortname: "*S. maires*"
+        longname: "*Syzygium maires* (A.Cunn.)"
+      style: longnoshort-short
+      showinlist: false
+
+  #### GIS Terms
+    - shortname: LiDAR
+      longname: light detection and ranging
+    - shortname: TLS
+      longname: terrestrial laser scanning
+    - shortname: LAS
+      longname: An open, binary file format for storing 3D point cloud data from LiDAR surveys.
+      style: shortnolong-short
+    - shortname: UAV
+      longname: unmanned aerial vehicle
+      plural:
+        shortname: UAVs
+        longname: unmanned aerial vehicles
+    - shortname: GIS
+      longname: geographic information system
+      style: shortnolong-short
+    - shortname: GPS
+      longname: global positioning system
+    - shortname: SDM
+      longname: species distribution model
+    - shortname: RS
+      longname: remote sensing
+      style: long-long
+      showinlist: false
+    - shortname: CAA
+      longname: Civil Aviation Authority
+    - shortname: RTK
+      longname: Real-Time Kinematic
+      style: shortnolong-short
+    - shortname: LINZ
+      longname: Toitū Te Whenua Land Information New Zealand
+      style: shortnolong-short
+    - key: PositioNZ
+      shortname: PositioNZ-RT
+      longname: Toitū Te Whenua PositioNZ Real Time Service
+    - shortname: GNSS
+      longname: Global Navigation Satellite System
+      style: shortnolong-short
+    - shortname: AGL
+      longname: above ground level
+    - shortname: DEM
+      longname: digital elevation model
+    - shortname: DTM
+      longname: digital terrain model
+    - shortname: DSM
+      longname: digital surface model
+    - shortname: WGS84
+      longname: World Geodetic System 1984
+      style: shortnolong-short
+    - shortname: CRP
+      longname: Calibrated Reference Panel
+    - shortname: M3M
+      longname: DJI Mavic 3 Multispectral [@djiDJIMavic]
+      style: longnoshort-short
+      showinlist: false
+    - shortname: RS3
+      longname: Emlid Reach RS3 RTK receiver [@emlidReachRS3]
+      style: longnoshort-short
+      showinlist: false
+
+  ### Spectral Imaging
+    - shortname: RGB
+      longname: red-green-blue
+    - shortname: MS
+      longname: multispectral
+    - shortname: HS
+      longname: hyperspectral
+    - shortname: VI
+      longname: vegetation index
+      plural:
+        shortname: VIs
+        longname: vegetation indices
+    - shortname: R
+      longname: red
+    - shortname: G
+      longname: green
+    - shortname: RE
+      longname: red edge
+    - shortname: NIR
+      longname: near-infrared
+    - shortname: NDVI
+      longname: normalized difference vegetation index
+      style: shortnolong-short
+    - shortname: RENDVI
+      longname: red edge normalized difference vegetation index
+      style: shortnolong-short
+    - shortname: REDVI
+      longname: red edge difference vegetation index
+      style: shortnolong-short
+    - shortname: NGRDI
+      longname: normalized green-red difference index
+      style: shortnolong-short
+    
+
+  ### Deep Learning / Computer Vision / Macine Learning
+    - shortname: CNN
+      longname: convolutional neural network
+    - shortname: FCNN
+      longname: fully convolutional neural network
+    - shortname: ML
+      longname: machine learning
+      style: long-long
+      showinlist: false
+    - shortname: DL
+      longname: deep learning
+      style: long-long
+      showinlist: false
+    - shortname: LR
+      longname: learning rate
+    - shortname: IoU
+      longname: intersection over union
+    - shortname: SVM
+      longname: support vector machine
+    - shortname: RF
+      longname: random forest
+    - shortname: ReLU
+      longname: rectified linear unit
+    - key: WBCE
+      shortname: $L_{WBCE}$
+      longname: weighted binary cross-entropy loss
+      style: shortnolong-short
+    - key: DICE
+      shortname: $L_{Dice}$
+      longname: dice loss
+      style: shortnolong-short
+    - key: WBCE-D
+      shortname: $L_{c}$
+      longname: combined weighted binary cross-entropy + dice loss
+      style: shortnolong-short
+    - shortname: SGD
+      longname: stochastic gradient descent
+    - shortname: F1
+      longname: The harmonic mean of precision and recall, used as a performance metric for classification models.
+      style: shortnolong-short
+
+  ### Other
+    - key: PF
+      shortname: P+F
+      longname: Plant & Food Research
+    - shortname: SOTA
+      longname: state-of-the-art
+      style: long-long
+      showinlist: false
+    - shortname: WF8
+      longname: warm temperate forest type 8
+    - shortname: ROI
+      longname: region of interest
+      plural:
+        shortname: ROIs
+        longname: regions of interest
+---

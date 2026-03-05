@@ -1,0 +1,10 @@
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QAustropucciniapsidii2019, causing the disease commonly known as myrtle rust.\\E$"}
+{"rule":"SMALL_NUMBER_OF","sentence":"^\\QNevertheless, fungicide treatment may be viable in cases where only a small number of trees require protection, provided that their exact locations are known.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_NZ","sentence":"^\\QGeurts et al. [-@geurtsTurningobservations2023] found that 94% of observations are within 1 km of roads, demonstrating the spatial bias of such opportunistic datasets.\\E$"}
+{"rule":"DB_PHRASE_479182","sentence":"^\\QGeurts et al. [-@geurtsTurningobservations2023] found that 94% of observations are within 1 km of roads, demonstrating the spatial bias of such opportunistic datasets.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QAustropucciniapsidii2019, causing the disease commonly known as {{< acr MR >}}.\\E$"}
+{"rule":"DB_PHRASE_479182","sentence":"^\\QTreeIso additionally removed the bottom 1.5m of vegetation as preprocessing step.\\E$"}
+{"rule":"DB_PHRASE_479182","sentence":"^\\QTreeiso additionally removed the bottom 1.5m of vegetation as preprocessing step.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_NZ","sentence":"^\\QEskdale Reserve A1 99 Yes Kaipātiki Project\nKauri Glen Reserve A2 99 Unknown Kauri Glen Bush Society\nBushglen Reserve A3 99 Yes Friends of Bushglen Reserve\nHammond Park H1 99 No Riverlea Environment Society\nWaiwhakareke Natural Heritage Park H2 99 No Friends of Waiwhakareke\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_NZ","sentence":"^\\QLobo Torres et al. [-@lobotorresApplyingFully2020], for instance, reported 44% target class representation among annotated pixels, rendering the present classification task considerably more challenging.\\E$"}
+{"rule":"DATE_NEW_YEAR","sentence":"^\\Q{{< acr LiDAR >}} flights were carried out on 22 May 2025 using a DJI Matrice 400 equipped with a Zenmuse L2 sensor.\\E$"}

@@ -1,0 +1,7 @@
+---
+title: Presentations
+toc: false
+---
+
+<iframe src="quarto.html" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+

@@ -1,0 +1,131 @@
+---
+title: "Open-source project management"
+
+author: "Robin Pfaff"
+format: 
+  revealjs:
+    navigation-mode: vertical 
+    center: true
+    incremental: true
+    scrollable: true
+    transition: slide
+    background-transition: fade
+    transition-speed: default
+    theme: dark
+    slide-number: h.v
+    show-slide-number: print
+    preview-links: true
+    chalkboard: true
+    buttons: true
+    controls: true
+    touch: true
+        
+---
+
+# Background
+
+
+## {.smaller}
+::: {.r-stack}
+![](figures/khan.png){width="600"}
+
+![](figures/microsoft.png){.fragment width="900"}
+:::
+::: footer
+https://apnews.com/article/icc-trump-sanctions-karim-khan-court-a4b4c02751ab84c09718b1b95cbd5db3
+:::
+
+## 
+
+> “Should relations with the US deteriorate, it is to be feared that Microsoft would be forced to shut everything down.”  
+> — *Henrik Appel Espersen, President of the Audit Committee in Copenhagen*
+
+::: footer
+https://www.watson.ch/digital/wirtschaft/937368774-microsoft-software-ist-wegen-trump-sicherheitsrisiko-daenemark-reagiert
+:::
+
+
+##
+![](figures/denmark.png){width="600" fig-align="center"}
+
+::: footer
+https://dig.watch/updates/denmark-moves-to-replace-microsoft-software-as-part-of-digital-sovereignty-strategy
+:::
+
+# Open-source in research workflows
+
+##
+::: {layout-ncol=2 layout-valign="center"}
+Open-source
+![](figures/mindstorm.jpg){height=300}
+
+
+::: {.fragment}
+Proprietary software
+![](figures/boston.jpg){height=300}
+:::
+:::
+
+
+
+## {background-image="figures/quarto.jpg"}
+
+
+## Quarto for research projects
+
+- **Code integration** (R, Python, Julia, Observable JS)
+- **Reproducibility**: Automatically update outputs when data/code changes
+- **Multi-format publishing**: HTML, PDF, Word, Revealjs, Typst, etc.
+- **Citation management** with CSL, BibTeX and Zotero
+- Extensible with custom templates, filters and other tools
+
+## Quarto in action
+
+- Write a paper with embedded code and figures
+- Interactive dashboards or visualizations
+- [Build teaching materials or course websites](https://computationalmovementanalysis.github.io/FS25/) 
+- Present with Revealjs slides
+
+::: {.fragment}
+**One tool to write, analyze, and publish — all in one place.**
+:::
+
+## The Quarto backbone
+![](figures/quarto_process.png)
+
+## My workflow {.smaller}
+![](figures/org.jpg){fig-align="center" width=600 .lightbox}
+
+
+## Let's jump into action!
+
+- [My thesis website](https://pfaffrob.github.io/myrtle_rust/aa566b206b36b985ac2ad0e73eedfc197cc8d2ffc/a49feaef2cb36248f101629c1c173fe7eb51fc45c/)
+- Zotero workflow demonstration
+
+# Drawbacks
+
+- steep learning curve
+- easy to get lost (endless rabbit holes)
+- new way of thinking
+- different limitations
+- not fully independent of big corporations (github, vscode, onedrive, etc.)
+
+## Pros
+
+- automate workflows
+- build what is not available (AI is your best friend here)
+- enormous flexibility
+- no endless formating/prevent formating mistakes
+
+
+
+##
+
+::: {.r-stack}
+![](figures/mindstorm.jpg){width="600"}
+
+![](figures/mindstorms_2.jpg){.fragment width="1200"}
+:::
+
+##
+![](figures/iceberg.jpg){fig-align="center" width=500 .lightbox}

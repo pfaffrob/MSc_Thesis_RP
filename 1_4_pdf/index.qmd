@@ -1,0 +1,43 @@
+---
+title: "PDF"
+format:
+  html:
+    page-layout: full
+---
+
+
+::: {.panel-tabset}
+## Thesis
+
+<div class="responsive-pdf">
+  <embed src="complete_thesis.pdf" type="application/pdf">
+</div>
+
+:::
+
+
+<style>
+  /* hide the description */
+.description {
+    display: none;
+}
+
+/* Responsive PDF container for more vertical documents */
+.responsive-pdf {
+    position: relative;
+    padding-bottom: 90%; /* More vertical aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.responsive-pdf embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>

@@ -1,0 +1,111 @@
+---
+title: Meeting 2
+description: "Mission planning"
+image: "../../../2_2_assets/drone.png"
+date: 2025-04-03
+categories: [data capture, H+S]
+---
+
+# Agenda
+- [ ] progress overview
+    + drone 101 certification
+        - 4h of drone flight time (45 minutes in ATTI mode)
+        - flight assesment requested for 20250409 --> waiting for confirmation
+    + project management
+      - setup zotero
+      - setup github repo (if you give me your usernames, i can give you read access)
+      - automated workflow to filter annotations and comments made in zotero
+      - PostGIS DB --> won't use that
+      - integrated ToDoist
+      - created website / central hub:
+          + from personal quarto template
+          + from [online template](https://lukmayer.github.io/blog/posts/quarto_template/)
+          + included features from previous projects
+          + [restricted access](https://lukmayer.github.io/blog/posts/login/) (not super secure, but will do for this project) 
+          + [Notes from kickoff-meeting](../1_meeting1/index.qmd) are now available 
+          + enabled adding comments with [hypothes.is](https://hypothes.is); see how to add them in the [documentation tab](../../../1_9_documentation/index.qmd)
+    + site mapping
+      - inspected Kauri Glen Reserve (most abundant in Swamp Maire 15+ trees), Eskdale Reserve, Bushglen Reserve (was closed)
+      - field data still to be shared (Qfield cloud)
+    + started a bit of research on drone settings --> more to be done/see subsequent point
+- [ ] all procedures to log H&S protocols required by AUT for field work
+- [x] drone details
+    + Multispectral
+        - [Mavic 3 enterprise multispectral](https://www.ferntech.co.nz/dji-mavic-3-multispectral-care)
+    + LiDAR
+        - [Matrice 350 RTK](https://enterprise.dji.com/matrice-350-rtk/specs)
+        - [Zenmuse L2](https://enterprise.dji.com/zenmuse-l2/specs)
+- [ ] discuss specific settings for my data captures
+    + Multispectral
+        - 
+    + LiDAR
+        - capture as detailed as possible due (relatively small research sites)
+        - collect all 5 returns (or at least 4)
+        - AGL 70-100m
+        - flight speed 50%/7.5ms [LiDAR guide](https://help.propelleraero.com/hc/en-us/articles/19384915723031-Mission-Planning-with-the-Zenmuse-L1-L2-for-Lidar-and-Photogrammetry)
+        - Repetitive Scanning Pattern
+        - forward overlap 70%
+        - side overlap 50%
+      
+- [ ] organize if Rebecca/Graham will join for the first flight or other way how I'll be introduced to the drones.
+- [ ] introduce you to my system of sharing meeting notes and adding feedback to drafts
+- [ ] generative AI: do i need to document the use of it if i use it for tools support (e.g. this website)
+- [ ] optional: quick demonstration of my workflow from reference management, adding annotations and sorting all annotations from multiple papers
+
+# Meeting Notes
+
+- viewshed analysis
+- anaye 3rd year student as research assistant
+- slight drop off in data after 
+- create checklists for fieldtrips
+- graham will order SD cards
+
+## H+S
+
+## Mission planning
+non-repetitive scanning better than repetitive pattern
+
+1. flight plans early next week
+2. Dji flight hub (only able to upload kml)
+3.    - use mavic 3 enterptise as drone (AUT ones not abailable)
+        - log flights for each aerea
+        DEM needs to be in WGS84 (use geoid hight)
+16 & 17 April for data capture
+(backup date is one week later)
+
+
+
+## data analysis
+
+- lok at treees above and below spray level (separate data at this line)
+
+# Tasks generated from the Meeting
+
+```{python}
+#| echo: false
+
+import sys
+import os
+
+# Add the directory containing 'my_module.py' to sys.path
+module_path = os.path.abspath(os.path.join('../..'))
+if module_path not in sys.path:
+    sys.path.append(module_path)
+
+# Now you can import the module
+from todoist import fetch_todoist_tasks
+
+fetch_todoist_tasks(labels=["meeting"], created_after="2025-04-01", created_before="2025-04-30")
+```
+
+
+# Recording
+
+<!-- <div style="text-align: center;">
+  <audio controls style="width: 100%;">
+    <source src="transcripts_recordings/20250306.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div> -->
+
+# Transcript

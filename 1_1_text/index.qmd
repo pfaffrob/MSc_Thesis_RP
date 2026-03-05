@@ -1,0 +1,28 @@
+---
+title: "In-situ aerial mapping of New Zealand Myrtaceae affected by Myrtle Rust (Austropuccinia psidii) using deep learning"
+description: "Some information you want search engines to know about"
+
+format:
+  html:
+    page-layout: full
+    number-sections: true
+    number-depth: 3
+---
+
+{{< include 00_abstract.qmd >}}
+
+
+{{< include 01_introduction.qmd >}}
+
+
+{{< include 02_method.qmd >}}
+{{< include 03_results.qmd >}}
+{{< include 04_discussion.qmd >}}
+{{< include 05_conclusions.qmd >}}
+
+
+
+
+
+
+{{< include 06_annex.qmd >}}

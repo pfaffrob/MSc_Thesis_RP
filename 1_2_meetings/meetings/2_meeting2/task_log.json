@@ -1,0 +1,20 @@
+{
+    "current": {},
+    "completed": [
+        {
+            "content": "Reach out to Ane",
+            "created_at": "2025-04-12T05:54:25.345931Z",
+            "labels": [
+                "meeting"
+            ]
+        },
+        {
+            "content": "Plan missions on DJi Flighthub",
+            "created_at": "2025-04-12T05:55:36.312009Z",
+            "labels": [
+                "meeting",
+                "mission_planning"
+            ]
+        }
+    ]
+}

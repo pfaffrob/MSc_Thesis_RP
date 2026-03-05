@@ -1,0 +1,92 @@
+---
+config:
+  theme: neutral
+  themeVariables:
+    fontSize: 16
+---
+
+flowchart TB
+   
+   subgraph main[" "]
+      direction LR
+
+   subgraph legend["**Legend**"]
+      direction TB
+          L1(["Raster data"])
+          L2["Python"]
+          L3["Agisoft Metashape"]
+    end
+       L1:::raster
+       L2:::python
+       L3:::metashape
+
+   
+
+   subgraph processing[" "]
+      direction TB
+         J(["MS orthomosaic <p style="color: rgb(54, 54, 54, 1);"> G, R, RE, NIR </p> "]):::raster
+         L["Calculate indices<p style="color: rgb(54, 54, 54, 1);"> NDVI <br> RENDVI <br> REDVI <br> NGRDI </p> "]:::python
+         M["Stretch to uint16"]:::python
+         Q(["Indices<p style="color: rgb(54, 54, 54, 1);"> NDVI, RENDVI, REDVI, NGRDI </p> "]):::raster
+
+      end
+         J --> L
+         L --> M
+         M --> Q
+
+
+   end
+
+   subgraph orthomosaic[" "]
+      direction TB
+         A(["Raw images"])
+         B["Calibrate reflectance <br> Align photos"]
+         C["Filter tiepoints <p style="color: rgb(54, 54, 54, 1);">Reconstruction uncertainty: <27 <br> Optimize alignment <br> Reprojection error: <0.83 <br> Optimize alignment <br> Projection accuracy: >3.8 <br> Optimize alignment </p> "]
+         D["Build point cloud"]
+         E["Filter point cloud <p style="color: rgb(54, 54, 54, 1);"> confidence: >2 </p> "]
+         F["Build model <p style="color: rgb(54, 54, 54, 1);"> Surface type: 2.5D </p> "]
+         G["Build orthomosaic <p style="color: rgb(54, 54, 54, 1);"> MS: 2.5 cm/pixel <br> RGB: 1.5 cm/pixel <br>Blending mode: Disabled </p> "]
+         H(["MS orthomosaic"])
+         I(["RGB orthomosaic"])
+      end
+         A --> B
+         B -->  C
+         C --> D
+         D --> E
+         E --> F
+         F --> G
+         G --> H & I
+
+         A:::raster
+         B:::metashape
+         C:::metashape
+         D:::metashape
+         E:::metashape
+         F:::metashape
+         G:::metashape
+         H:::raster
+         I:::raster
+
+
+
+    %% === CLASS DEFINITIONS START ===
+    
+    %% === DATA TYPES ===
+    classDef vector fill:#B3D1FF, stroke:transparent, stroke-width:2px;  %% Vector data
+    classDef raster fill:#FFB3B3, stroke:transparent, stroke-width:2px; %% Raster data
+    classDef lidar fill:#AEE9C1, stroke:transparent, stroke-width:2px;  %% LiDAR data
+    
+    %% === PROCESS TYPES ===
+    classDef fieldwork fill:#c1e3e2, stroke:transparent, stroke-width:2px; %% %% Fieldwork / Manual work
+    classDef python fill:#FFF2A8, stroke:transparent, stroke-width:2px;     %% Python
+    classDef metashape fill:#FFD1A8, stroke:transparent, stroke-width:2px;  %% Agisoft Metashape
+    classDef cloudcompare fill:#D6B3FF, stroke:transparent, stroke-width:2px; %% CloudCompare
+    classDef djiterra fill:#c1cfe3, stroke:transparent, stroke-width:2px; %% DJI Terra
+    
+    
+    %% === SUBGRAPH STYLES ===
+    style main stroke:none,fill:transparent;
+    style orthomosaic stroke:none,fill:transparent;
+    style processing stroke:none,fill:transparent;
+    style legend stroke:none,fill:#f0f0f0;
+    %% === CLASS DEFINITIONS END ===

@@ -1,0 +1,85 @@
+---
+title: Your future about page
+description: Some general information about Quarto functionality 
+bibliography: references.bib
+---
+
+
+# Basic Markdown Features
+
+# Links and images
+
+[Lukas W. Mayer's website](https://lukmayer.github.io)
+
+![](../2_2_assets/dude.png)
+
+
+## Text Formatting
+
+This is **bold text**, *italic text*, and ***bold italic text***. 
+You can also use ~~strikethrough~~ and `inline code`.
+
+## Lists
+
+- Unordered list item 1
+  - Nested item A
+  - Nested item B
+- Unordered list item 2
+
+1. Ordered list item 1
+2. Ordered list item 2
+   1. Nested ordered item
+
+## Blockquotes
+
+> This is a blockquote
+
+
+## Mathematical Expressions
+
+Inline math: $E = mc^2$
+
+Display math:
+
+
+## Code Blocks
+
+Passive code block (only for show, no execution):
+
+```python
+def hello_world():
+    print(&quot;Hello, Quarto!&quot;)
+    return True
+```
+
+Active code block (this code will be executed):
+
+## Tables
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | A        | 1        |
+| Row 2    | B        | 2        |
+| Row 3    | C        | 3        |
+
+## Callouts
+
+::: {.callout-note}
+This is a note callout
+:::
+
+::: {.callout-warning}
+This is a warning callout
+:::
+
+
+## Footnotes and references
+
+Here's a sentence with a footnote[^1].
+
+[^1]: This is the footnote text.
+
+You can also use inline footnotes^[Like this one which is written inline].
+
+Here's how to reference: @Mayer2024
+Note the bibliography linked in the front matter of this document.
