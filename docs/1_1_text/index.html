@@ -487,7 +487,7 @@ Figure&nbsp;2: Examples of <a href="#acronyms_SM"><em>S. maire</em></a> in urban
 <div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 9.5%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div id="fc803c5a" class="cell quarto-layout-cell" data-execution_count="1" style="flex-basis: 81.0%;justify-content: flex-start;">
+<div id="3c4a60b9" class="cell quarto-layout-cell" data-execution_count="1" style="flex-basis: 81.0%;justify-content: flex-start;">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -868,7 +868,7 @@ Figure&nbsp;8: The maps for Auckland (<strong>a</strong>) and Hamilton (<strong>
 </section>
 <section id="data-processing-and-analysis" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="data-processing-and-analysis"><span class="header-section-number">2.5</span> Data Processing and Analysis</h2>
-<p>All data processing and analysis was performed using a combination of Python (v3.13.2), Agisoft Metashape <span class="citation" data-cites="agisoftllcAgisoftMetashape2025a">(<a href="#ref-agisoftllcAgisoftMetashape2025a" role="doc-biblioref">Agisoft LLC, v2.2.1, 2025</a>)</span>, DJI Terra <span class="citation" data-cites="djiDJITerra">(<a href="#ref-djiDJITerra" role="doc-biblioref">DJI, v4.13.3.0, n.d.</a>)</span> and CloudCompare <span class="citation" data-cites="cloudcompareCloudCompareVersion2022">(<a href="#ref-cloudcompareCloudCompareVersion2022" role="doc-biblioref">CloudCompare, v2.14.alpha, 2022</a>)</span>. Computations were carried out on a workstation with a 13th Gen Intel® Core™ i7-13700 CPU, NVIDIA GeForce RTX 4070 Ti GPU, and 128 GB RAM running Windows 11. The following sections describe the data preprocessing, training and inference workflow in detail. The source code of this thesis is available on <a href="github.com/pfaffrob/myrtle_rust">github.com/pfaffrob/myrtle_rust</a>.</p>
+<p>All data processing and analysis was performed using a combination of Python (v3.13.2), Agisoft Metashape <span class="citation" data-cites="agisoftllcAgisoftMetashape2025a">(<a href="#ref-agisoftllcAgisoftMetashape2025a" role="doc-biblioref">Agisoft LLC, v2.2.1, 2025</a>)</span>, DJI Terra <span class="citation" data-cites="djiDJITerra">(<a href="#ref-djiDJITerra" role="doc-biblioref">DJI, v4.13.3.0, n.d.</a>)</span> and CloudCompare <span class="citation" data-cites="cloudcompareCloudCompareVersion2022">(<a href="#ref-cloudcompareCloudCompareVersion2022" role="doc-biblioref">CloudCompare, v2.14.alpha, 2022</a>)</span>. Computations were carried out on a workstation with a 13th Gen Intel® Core™ i7-13700 CPU, NVIDIA GeForce RTX 4070 Ti GPU, and 128 GB RAM running Windows 11. The following sections describe the data preprocessing, training and inference workflow in detail. The source code of this thesis is available on <a href="github.com/pfaffrob/MSc_Thesis_RP">github.com/pfaffrob/MSc_Thesis_RP</a>.</p>
 <section id="orthomosaic" class="level3" data-number="2.5.1">
 <h3 data-number="2.5.1" class="anchored" data-anchor-id="orthomosaic"><span class="header-section-number">2.5.1</span> Orthomosaic</h3>
 <p><a href="#acronyms_RGB">RGB</a> and <a href="#acronyms_MS">MS</a> orthomosaics were generated from raw imagery in Agisoft Metashape, following workflows proposed by Geospatial Tips <span class="citation" data-cites="geospatialtipsAgisoftMetashape2022">(<a href="#ref-geospatialtipsAgisoftMetashape2022" role="doc-biblioref">2022</a>)</span>, with some modifications for our data requirements. This process involved first calibrating reflectance and aligning of images, followed by iterative tiepoint filtering based on reconstruction uncertainty (&lt;27), reprojection error (&lt;0.83), and projection accuracy (&gt;3.8), with alignment optimisation after each step. A dense point cloud was constructed and filtered by confidence (&gt;2), which was then used to build a 2.5D surface (a point cloud which is triangulated into a mesh without overhang). The orthomosaics were exported at 2.5 cm/pixel resolution for <a href="#acronyms_MS">MS</a> imagery and 1.5 cm/pixel for <a href="#acronyms_RGB">RGB</a> imagery, with blending mode disabled (<a href="#fig-wf_orthomosaic" class="quarto-xref">Figure&nbsp;9</a>). The blending mode was disabled to ensure that no smoothing or interpolation occurred during the orthomosaic generation process, and only raw image values were assigned to each pixel.</p>
@@ -1268,7 +1268,7 @@ Figure&nbsp;12: Workflow to test the LiDAR tree segmentation methods (TreeLearn 
 <div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 15.0%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div id="8bed9659" class="cell quarto-layout-cell" data-execution_count="2" style="flex-basis: 70.0%;justify-content: flex-start;">
+<div id="f0f279b0" class="cell quarto-layout-cell" data-execution_count="2" style="flex-basis: 70.0%;justify-content: flex-start;">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1920,7 +1920,7 @@ Table&nbsp;7: The performance metrics from the 10 best performing model configur
 <p>Despite systematic optimisation, multi-site models achieved substantially lower performance than single-site models. The best multi-site configuration (<a href="#acronyms_RGB">RGB</a> imagery, <a href="#acronyms_WBCE_D"><span class="math inline">\(L_{c}\)</span></a>, weight=50) achieved an <a href="#acronyms_F1">F1</a> of 0.51 and <a href="#acronyms_IoU">IoU</a> of 0.34, representing a 37% reduction in <a href="#acronyms_F1">F1</a> compared to the best single-site model. Only the <a href="#acronyms_RGB">RGB</a> imagery model with <a href="#acronyms_WBCE_D"><span class="math inline">\(L_{c}\)</span></a> achieved performance comparable to some single-site models (<a href="#acronyms_F1">F1</a>=0.54). Across all configurations, multi-site predictions were notably noisier than their single-site counterparts (<a href="#fig-predictions-multisite" class="quarto-xref">Figure&nbsp;15</a>), indicating that the model struggled to learn consistent <a href="#acronyms_SM"><em>S. maire</em></a> characteristics across different forest structures and lighting conditions. Notably, visually one of the best results was on a site (A2) that showed poor results in the single-site setting, identifying <a href="#acronyms_SM"><em>S. maire</em></a> accurately (RGB, <span class="math inline">\(L_{c}\)</span>, weight=50; <a href="#acronyms_F1">F1</a>=0.54; <a href="#fig-predictions-multisite" class="quarto-xref">Figure&nbsp;15</a>).</p>
 <div id="cell-fig-predictions-multisite" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display">
-<div id="fig-predictions-multisite" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-scap="Predictions multi-site.">
+<div id="fig-predictions-multisite" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Predictions multi-site." data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-predictions-multisite-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <a href="index_files/figure-html/fig-predictions-multisite-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Figure&nbsp;15: Predictions from the best-performing multi-site models for the test zone for each reserve for a 15x15 m extent. Pink overlays indicate predictions on MS imagery, yellow overlays on RGB imagery. Model configurations are listed on the left; all models were trained with a LR of 0.02. For example RGB-L_{c}-W50 reads as: “model trained on RGB bands using L_{c} with a weight of 50”."><img src="index_files/figure-html/fig-predictions-multisite-output-1.png" data-fig-pos="H" data-fig-scap="Predictions multi-site." width="1383" height="1910" class="figure-img"></a>
@@ -2389,7 +2389,7 @@ Figure S2: Example of different reflectance on calibrated <a href="#acronyms_MS"
 <p>&nbsp;</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 71.4%;justify-content: flex-start;">
-<div id="672dffc5" class="cell" data-execution_count="11">
+<div id="b41c7fd7" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2406,7 +2406,7 @@ Figure S2: Example of different reflectance on calibrated <a href="#acronyms_MS"
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 47.6%;justify-content: flex-start;">
-<div id="0198990f" class="cell" data-execution_count="12">
+<div id="984eb6c0" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2421,7 +2421,7 @@ Figure S2: Example of different reflectance on calibrated <a href="#acronyms_MS"
 <p>&nbsp;</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 47.6%;justify-content: flex-start;">
-<div id="4f9c7ae5" class="cell" data-execution_count="13">
+<div id="8aa02ba0" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2435,7 +2435,7 @@ Figure S2: Example of different reflectance on calibrated <a href="#acronyms_MS"
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 47.6%;justify-content: flex-start;">
-<div id="473ff512" class="cell" data-execution_count="14">
+<div id="ff6a3ba9" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2450,7 +2450,7 @@ Figure S2: Example of different reflectance on calibrated <a href="#acronyms_MS"
 <p>&nbsp;</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 47.6%;justify-content: flex-start;">
-<div id="85b9c962" class="cell" data-execution_count="15">
+<div id="68fbf77b" class="cell" data-execution_count="15">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2474,7 +2474,7 @@ Figure S3: Histogram of the <a href="#acronyms_CRP">CRP</a> within the calibrate
 <div id="sfig-exposure" class="quarto-float quarto-figure quarto-figure-center anchored" data-sfig-pos="H">
 <figure class="quarto-float quarto-float-sfig figure">
 <div aria-describedby="sfig-exposure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="eaf523f2" class="cell quarto-layout-panel" data-layout="[[1,1]]" data-execution_count="16">
+<div id="bf56b720" class="cell quarto-layout-panel" data-execution_count="16" data-layout="[[1,1]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><a href="index_files/figure-html/cell-17-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37" title="Figure S4: Metadata for site A2 showing exposure time and sensor gain, showing that the auto-settings of the M3M are inconsistent during a capture."><img src="index_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img" width="663"></a></p>
@@ -2512,7 +2512,7 @@ Figure S5: Example of artefacts on processed <a href="#acronyms_RGB">RGB</a> ort
 Table S1: Dataset summary with class distribution of training (80%) and validation split (20%) showing tile counts and <a href="#acronyms_SM"><em>S. maire</em></a> pixel percentages for each reserve.
 </figcaption>
 <div aria-describedby="stbl-class_distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="bc64b060" class="cell" data-execution_count="17">
+<div id="226871e6" class="cell" data-execution_count="17">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="17">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -2596,7 +2596,7 @@ Figure S6: Example of random predictions from a model trained with <a href="#acr
 <div id="sfig-train_metrics_best" class="quarto-float quarto-figure quarto-figure-center anchored" data-sfig-pos="H">
 <figure class="quarto-float quarto-float-sfig figure">
 <div aria-describedby="sfig-train_metrics_best-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="c5efcebf" class="cell" data-execution_count="19">
+<div id="40de96af" class="cell" data-execution_count="19">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2614,7 +2614,7 @@ Figure S7: Train metrics from the best performing single-site model for site A2 
 <div id="sfig-train_metrics_multi_site" class="quarto-float quarto-figure quarto-figure-center anchored" data-sfig-pos="H">
 <figure class="quarto-float quarto-float-sfig figure">
 <div aria-describedby="sfig-train_metrics_multi_site-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="6e993fdd" class="cell" data-execution_count="20">
+<div id="fa7009bf" class="cell" data-execution_count="20">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2635,7 +2635,7 @@ Figure S8: Train metrics from multi-site model trained on all sites with no trai
 Table S2: Overall best performing parameters for multi-site.
 </figcaption>
 <div aria-describedby="stbl-model_type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="dcc05c5a" class="cell" data-execution_count="21">
+<div id="d2459e74" class="cell" data-execution_count="21">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="21">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -2704,7 +2704,7 @@ Table S2: Overall best performing parameters for multi-site.
 Table S3: Overall best performing models for site A1.
 </figcaption>
 <div aria-describedby="stbl-best_models_single_site_ESK-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="5f9b592c" class="cell" data-execution_count="22">
+<div id="094aa833" class="cell" data-execution_count="22">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="22">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -2844,7 +2844,7 @@ Table S3: Overall best performing models for site A1.
 Table S4: Overall best performing models for site A2.
 </figcaption>
 <div aria-describedby="stbl-best_models_single_site_KAU-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="83251641" class="cell" data-execution_count="23">
+<div id="ec57338b" class="cell" data-execution_count="23">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="23">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -2984,7 +2984,7 @@ Table S4: Overall best performing models for site A2.
 Table S5: Overall best performing models for site A3.
 </figcaption>
 <div aria-describedby="stbl-best_models_single_site_BUS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="05c0c391" class="cell" data-execution_count="24">
+<div id="a124b445" class="cell" data-execution_count="24">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="24">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -3124,7 +3124,7 @@ Table S5: Overall best performing models for site A3.
 Table S6: Overall best performing models for site H1.
 </figcaption>
 <div aria-describedby="stbl-best_models_single_site_HAM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="82707d89" class="cell" data-execution_count="25">
+<div id="ac831caa" class="cell" data-execution_count="25">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="25">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -3264,7 +3264,7 @@ Table S6: Overall best performing models for site H1.
 <div id="sfig-predictions_single_weight_comparison" class="quarto-float quarto-figure quarto-figure-center anchored" data-sfig-pos="H">
 <figure class="quarto-float quarto-float-sfig figure">
 <div aria-describedby="sfig-predictions_single_weight_comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="ea2e5f4c" class="cell" data-execution_count="26">
+<div id="f678eb2e" class="cell" data-execution_count="26">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -3285,7 +3285,7 @@ Figure S9: Predictions from the single-site models for the test zone for each re
 Table S7: The performance metrics from all model configurations trained on the multi-site dataset, sorted by F1 score.
 </figcaption>
 <div aria-describedby="stbl-multi_site_all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="056e1339" class="cell" data-execution_count="27">
+<div id="c9b4e1a0" class="cell" data-execution_count="27">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="27">
 <table class="caption-top table table-sm table-striped small">
 <thead>

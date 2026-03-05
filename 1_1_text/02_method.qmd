@@ -83,7 +83,7 @@ Ground-truthing of {{< acr SM >}} on sites A2 and A3 was carried out on 10 May a
 
 ## Data Processing and Analysis
 
-All data processing and analysis was performed using a combination of Python (v3.13.2), Agisoft Metashape [@agisoftllcAgisoftMetashape2025a], DJI Terra [@djiDJITerra] and CloudCompare [@cloudcompareCloudCompareVersion2022]. Computations were carried out on a workstation with a 13th Gen Intel® Core™ i7-13700 CPU, NVIDIA GeForce RTX 4070 Ti GPU, and 128 GB RAM running Windows 11. The following sections describe the data preprocessing, training and inference workflow in detail. The source code of this thesis is available on [github.com/pfaffrob/myrtle_rust](github.com/pfaffrob/myrtle_rust).
+All data processing and analysis was performed using a combination of Python (v3.13.2), Agisoft Metashape [@agisoftllcAgisoftMetashape2025a], DJI Terra [@djiDJITerra] and CloudCompare [@cloudcompareCloudCompareVersion2022]. Computations were carried out on a workstation with a 13th Gen Intel® Core™ i7-13700 CPU, NVIDIA GeForce RTX 4070 Ti GPU, and 128 GB RAM running Windows 11. The following sections describe the data preprocessing, training and inference workflow in detail. The source code of this thesis is available on [github.com/pfaffrob/MSc_Thesis_RP](github.com/pfaffrob/MSc_Thesis_RP).
 
 ### Orthomosaic
 
