@@ -8,21 +8,24 @@ format:
     number-sections: true
     number-depth: 3
 ---
+```{python}
 
-{{< include 00_abstract.qmd >}}
-
-
-{{< include 01_introduction.qmd >}}
-
-
-{{< include 02_method.qmd >}}
-{{< include 03_results.qmd >}}
-{{< include 04_discussion.qmd >}}
-{{< include 05_conclusions.qmd >}}
+# {{< include 00_abstract.qmd >}}
 
 
 
+# {{< include 01_introduction.qmd >}}
+
+
+# {{< include 02_method.qmd >}}
+# {{< include 03_results.qmd >}}
+# {{< include 04_discussion.qmd >}}
+# {{< include 05_conclusions.qmd >}}
 
 
 
-{{< include 06_annex.qmd >}}
+
+
+
+# {{< include 06_annex.qmd >}}
+```

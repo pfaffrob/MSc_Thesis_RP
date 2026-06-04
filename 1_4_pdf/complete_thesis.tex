@@ -504,10 +504,9 @@ Initially, the growing uredinial spores form yellow pustules
 on leaves, killing the photosynthetic tissue and preventing the growth
 of new meristematic tissue, leading to the death of shoot tips
 (Figure~\ref{fig-red_blotches}) and flowers. Sustained infection
-ultimately leads to substantial defoliation
-(Figure~\ref{fig-smaire_stand}; Boufleur et al., 2023). Hence, infection
-hinders the host to produce new photosynthetic tissue and development of
-seeds, disrupting the reproductive cycle
+ultimately leads to substantial defoliation (Boufleur et al., 2023).
+Hence, infection hinders the host to produce new photosynthetic tissue
+and development of seeds, disrupting the reproductive cycle
 (\citeproc{ref-fenshamUnprecedentedextinction2021}{Fensham \&
 Radford-Smith, 2021}). In severe cases, sustained tissue loss and
 inability to produce new seeds can render the host infertile, ultimately
@@ -910,7 +909,7 @@ sources (\hyperref[acronyms_RGB]{RGB} imagery,
 cost-effective to acquire, there is substantially more
 \hyperref[acronyms_DL]{deep learning} research in
 \hyperref[acronyms_RS]{remote sensing} based on 2D-sensed than on
-3D-sensed data (Figure~\ref{fig-bibliostats}; Zhong et al., 2024).
+3D-sensed data (Figure~\ref{fig-bibliostats}; L. Zhong et al., 2024).
 
 \begin{figure}
 
@@ -1117,11 +1116,11 @@ constraints.
 
 }
 
-\caption[Overview methodology workflow.]{\label{fig-wf_overall}The
-approach this thesis took for the identification of \emph{S. maire} on
-UAV-collected data. The main focus is on the 2D-based deep learning
-approach, but the capabilities of 3D-based segmentation are also
-qualitatively evaluated.}
+\caption[Overview methodology workflow.]{\label{fig-wf_overall}Overview
+of the UAV-based data workflow used in this thesis, showing field
+acquisition and the two analytical branches: 2D semantic segmentation of
+RGB/MS imagery and exploratory LiDAR-based individual tree
+segmentation.}
 
 \end{figure}%
 
@@ -1261,7 +1260,7 @@ Hammond Park & H1 & 15 & No &
 324 \\
 \end{longtable}
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -1347,6 +1346,56 @@ to variable lighting conditions, resulting in poor data quality
 imagery and \hyperref[acronyms_MS]{MS} imagery were acquired on 19
 September (A1--A3) and 20 September (H1) 2025.
 
+\begin{figure}[H]
+
+\centering{
+
+\begin{figure}[H]
+
+\begin{minipage}{0.49\linewidth}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/M3M.jpeg}}
+
+}
+
+\subcaption{\label{fig-M3M}The DJI Mavic 3 Multispectral
+\hyperref[acronyms_UAV]{UAV} with the \hyperref[acronyms_RGB]{RGB} and
+\hyperref[acronyms_MS]{MS} sensors. Image: From wikimedia by \emph{ZLEA}
+(\citeproc{ref-zleaEnglishDJI2024}{2024}). CC-BY-SA-4.0.}
+
+\end{minipage}%
+%
+\begin{minipage}{0.02\linewidth}
+~\end{minipage}%
+%
+\begin{minipage}{0.49\linewidth}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/Matrice_350_AUT.JPG}}
+
+}
+
+\subcaption{\label{fig-Matrice350}The DJI Matrice 350
+\hyperref[acronyms_UAV]{UAV}-platform equipped with the Zenmuse L2
+\hyperref[acronyms_LiDAR]{LiDAR} sensor. Image: Copyright by Auckland
+University of Technology (AUT). Reprinted with permission.}
+
+\end{minipage}%
+
+\end{figure}%
+
+}
+
+\caption[UAVs used for data collection.]{\label{fig-UAV}The two
+\hyperref[acronyms_UAV]{UAVs} used for
+\hyperref[acronyms_RGB]{RGB}/\hyperref[acronyms_MS]{MS} (\textbf{a}) and
+\hyperref[acronyms_LiDAR]{LiDAR} (\textbf{b}) data collection.}
+
+\end{figure}%
+
 All flights were carried out under full sunlight with wind speeds below
 6 m/s. To ensure optimal exposure, flights were conducted within two
 hours of solar noon (\citeproc{ref-robbinsNatureScanRGB2025}{Robbins et
@@ -1400,56 +1449,6 @@ more overlapping flight paths and thus variable point density.
 Furthermore, site A2 had a section with more open swampy areas, meaning
 less vegetation and therefore further reduced point density.
 
-\begin{figure}[H]
-
-\centering{
-
-\begin{figure}[H]
-
-\begin{minipage}{0.49\linewidth}
-
-\centering{
-
-\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/M3M.jpeg}}
-
-}
-
-\subcaption{\label{fig-M3M}The DJI Mavic 3 Multispectral
-\hyperref[acronyms_UAV]{UAV} with the \hyperref[acronyms_RGB]{RGB} and
-\hyperref[acronyms_MS]{MS} sensors. Image: From wikimedia by \emph{ZLEA}
-(\citeproc{ref-zleaEnglishDJI2024}{2024}). CC-BY-SA-4.0.}
-
-\end{minipage}%
-%
-\begin{minipage}{0.02\linewidth}
-~\end{minipage}%
-%
-\begin{minipage}{0.49\linewidth}
-
-\centering{
-
-\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/Matrice_350_AUT.JPG}}
-
-}
-
-\subcaption{\label{fig-Matrice350}The DJI Matrice 350
-\hyperref[acronyms_UAV]{UAV}-platform equipped with the Zenmuse L2
-\hyperref[acronyms_LiDAR]{LiDAR} sensor. Image: Copyright by Auckland
-University of Technology (AUT). Reprinted with permission.}
-
-\end{minipage}%
-
-\end{figure}%
-
-}
-
-\caption[UAVs used for data collection.]{\label{fig-UAV}The two
-\hyperref[acronyms_UAV]{UAVs} used for
-\hyperref[acronyms_RGB]{RGB}/\hyperref[acronyms_MS]{MS} (\textbf{a}) and
-\hyperref[acronyms_LiDAR]{LiDAR} (\textbf{b}) data collection.}
-
-\end{figure}%
-
 \subsection{Regulatory Compliance and Safety
 Considerations}\label{regulatory-compliance-and-safety-considerations}
 
@@ -1467,7 +1466,7 @@ site A1, flight paths were planned to avoid overflight of sensitive
 areas, including a generous distance to a Horse paddock with animals
 present and the Glenfield cemetery at Eskdale Reserve (A1).
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -1582,6 +1581,20 @@ mode was disabled to ensure that no smoothing or interpolation occurred
 during the orthomosaic generation process, and only raw image values
 were assigned to each pixel.
 
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/mermaid_orthomosaic.png}}
+
+}
+
+\caption[Orthomosaic generation
+workflow.]{\label{fig-wf_orthomosaic}Workflow to generate the
+orthomosaics and further processing to prepare for model input.}
+
+\end{figure}%
+
 To enhance spectral discrimination, four normalised
 \hyperref[acronyms_VI]{vegetation indices (VIs)} were computed from the
 four-channel \hyperref[acronyms_MS]{MS} orthomosaics
@@ -1608,21 +1621,6 @@ have shown potential for species identification where spectral
 signatures are needed due to limited morphological features
 (\citeproc{ref-barreroRGBmultispectral2018}{Barrero \& Perdomo, 2018};
 \citeproc{ref-briechleClassificationTree2020}{Briechle et al., 2020}).
-
-Due to saturation of the \hyperref[acronyms_R]{R} and
-\hyperref[acronyms_G]{G} bands on the \hyperref[acronyms_CRP]{CRP} photo
-(\quartosfigref{sfig-crp_hist}), \hyperref[acronyms_MS]{MS} imagery and
-\hyperref[acronyms_VI]{VIs} were processed in two calibration schemes:
-absolute (using the sun sensor and \hyperref[acronyms_CRP]{CRP}) and
-relative (using only the sun sensor; Table~\ref{tbl-band-combinations}).
-Absolute calibration adjusts for exposure differences between sites,
-whilst relative calibration was retained to evaluate whether the burned
-\hyperref[acronyms_CRP]{CRP} pixels (\quartosfigref{sfig-crp_hist}) used
-for radiometric calibration influenced model performance. A burned pixel
-means that it is assigned the maximum value (65535 in uint16 format),
-which means that the pixel value does not represent the true reflectance
-of the surface, but rather the maximum value that the sensor can record
-with the specified exposure settings (\quartosfigref{sfig-exposure}).
 
 \begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.6275}}
@@ -1661,19 +1659,20 @@ et al. (\citeproc{ref-briechleClassificationTree2020}{2020}) \\
 (\citeproc{ref-tuckerRedphotographic1979}{1979}) \\
 \end{longtable}
 
-\begin{figure}[H]
-
-\centering{
-
-\pandocbounded{\includegraphics[keepaspectratio]{../2_1_figures/method/mermaid_orthomosaic.png}}
-
-}
-
-\caption[Orthomosaic generation
-workflow.]{\label{fig-wf_orthomosaic}Workflow to generate the
-orthomosaics and further processing to prepare for model input.}
-
-\end{figure}%
+Due to saturation of the \hyperref[acronyms_R]{R} and
+\hyperref[acronyms_G]{G} bands on the \hyperref[acronyms_CRP]{CRP} photo
+(\quartosfigref{sfig-crp_hist}), \hyperref[acronyms_MS]{MS} imagery and
+\hyperref[acronyms_VI]{VIs} were processed in two calibration schemes:
+absolute (using the sun sensor and \hyperref[acronyms_CRP]{CRP}) and
+relative (using only the sun sensor; Table~\ref{tbl-band-combinations}).
+Absolute calibration adjusts for exposure differences between sites,
+whilst relative calibration was retained to evaluate whether the burned
+\hyperref[acronyms_CRP]{CRP} pixels (\quartosfigref{sfig-crp_hist}) used
+for radiometric calibration influenced model performance. A burned pixel
+means that it is assigned the maximum value (65535 in uint16 format),
+which means that the pixel value does not represent the true reflectance
+of the surface, but rather the maximum value that the sensor can record
+with the specified exposure settings (\quartosfigref{sfig-exposure}).
 
 \subsection{U-Net}\label{u-net}
 
@@ -1703,7 +1702,7 @@ differences and geometric offsets between sensors,
 annotated independently. Following digitisation, annotation polygons
 were rasterised to match orthomosaic resolution.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -1913,22 +1912,7 @@ convolution maps each feature vector to output classes, producing the
 segmentation map. The architecture is displayed in
 Figure~\ref{fig-unet}.
 
-The implementation was adjusted by adding zero-padding to the 3×3
-conv/\hyperref[acronyms_ReLU]{ReLU} blocks to retain input-to-output
-spatial resolution, eliminating the cropping required in the original
-design and simplifying inference post-processing. Whilst zero-padding
-could introduce artefacts at tile boundaries
-(\citeproc{ref-huangTilingstitching2019}{Huang et al., 2019}), this was
-not observed with the applied tiling approach. Therefore, other options,
-such as using a buffer for predictions which is clipped post-processing
-(\citeproc{ref-ballAccuratedelineation2023}{Ball et al., 2023};
-\citeproc{ref-freudenbergLargeScale2019}{Freudenberg et al., 2019}),
-were not further explored. The model was implemented in PyTorch
-(\citeproc{ref-paszkePyTorchImperative2019}{Paszke et al., 2019}) and
-core functionalities used from Pfaff
-(\citeproc{ref-pfaffPrivetdetectionunpublished}{unpublished}).
-
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -1944,6 +1928,21 @@ grey boxes display feature map copies, and arrows represent the various
 operations.}
 
 \end{figure}%
+
+The implementation was adjusted by adding zero-padding to the 3×3
+conv/\hyperref[acronyms_ReLU]{ReLU} blocks to retain input-to-output
+spatial resolution, eliminating the cropping required in the original
+design and simplifying inference post-processing. Whilst zero-padding
+could introduce artefacts at tile boundaries
+(\citeproc{ref-huangTilingstitching2019}{Huang et al., 2019}), this was
+not observed with the applied tiling approach. Therefore, other options,
+such as using a buffer for predictions which is clipped post-processing
+(\citeproc{ref-ballAccuratedelineation2023}{Ball et al., 2023};
+\citeproc{ref-freudenbergLargeScale2019}{Freudenberg et al., 2019}),
+were not further explored. The model was implemented in PyTorch
+(\citeproc{ref-paszkePyTorchImperative2019}{Paszke et al., 2019}) and
+core functionalities used from Pfaff
+(\citeproc{ref-pfaffPrivetdetectionunpublished}{unpublished}).
 
 \subsubsection{Loss Functions}\label{loss-functions}
 
@@ -2031,7 +2030,8 @@ on the validation dataset) was used for subsequent inference.
 
 For single-site models, all combinations of \hyperref[acronyms_LR]{LRs}
 (0.02, 5×10\textsuperscript{-5}), class weights (1, 10, 50), loss
-functions (Dice, \hyperref[acronyms_WBCE]{\(L_{WBCE}\)},
+functions (\hyperref[acronyms_DICE]{\(L_{Dice}\)},
+\hyperref[acronyms_WBCE]{\(L_{WBCE}\)},
 \hyperref[acronyms_WBCE_D]{\(L_{c}\)}), and band combinations
 (MS\(_{rel}\), RGB) were evaluated individually on each reserve. For the
 remaining band combinations, base hyperparameters were used (weight=10,
@@ -2108,7 +2108,7 @@ assessed qualitatively to determine whether they are worth exploring
 further in future work. The following describes the processing steps
 undertaken, and the workflow is shown in Figure~\ref{fig-wf_treeseg}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -3436,11 +3436,11 @@ The annual symptom maximum occurs during March--April
 however, data collection in this thesis occurred in September, a period
 of minimal symptom occurrence. Furthermore, the 2024/25 summer exhibited
 reduced symptom levels due to unfavourable weather conditions for new
-infections (R. Beresford, Plant \& Food Research, pers. comm.), limiting
-potential disease signals in the acquired data. Even under conditions of
-active disease expression, the small leaf dimensions and most symptom
-occurrence on leaf undersides, make disease detection extremely
-challenging.
+infections (R. Beresford, personal communication, October 29, 2025),
+limiting potential disease signals in the acquired data. Even under
+conditions of active disease expression, the small leaf dimensions and
+most symptom occurrence on leaf undersides, make disease detection
+extremely challenging.
 
 Nonetheless, \hyperref[acronyms_MR]{myrtle rust} identification has been
 achieved in a plantation setting with an accuracy of over 95\%
