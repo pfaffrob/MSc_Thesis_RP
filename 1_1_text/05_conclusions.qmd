@@ -26,7 +26,15 @@ Species distribution modelling integrated with {{< acr UAV >}} reconnaissance of
 
 The methodology's applicability extends internationally to other regions affected by {{< acr AP >}}. Australia faces comparable {{< acr MR >}} impacts on native Myrtaceae, with local extinctions already documented [@fenshamUnprecedentedextinction2021]. The technical approaches developed here provides a methodological template adaptable to similar conservation challenges globally. However, each regional context requires separate consideration of species traits, abundance and forest structure to determine optimal detection strategies.
 
+## Future Work
 
+Several lines of work follow directly from the limitations identified above and from the {{< acr LiDAR >}} experiments. First, future research should initially focus on improving the identification of {{< acr SM >}} before attempting direct disease detection. This requires larger and more diverse training samples drawn from additional sites and seasons (for example inclusion of natural old-growth swamp, different urban parks, replanted sites and remnant trees) to improve representativeness. In cases where disease detection is the priority, targeted acquisitions during the March–April symptom peak are recommended.
+
+Second, {{< acr LiDAR >}}-based methods require further algorithmic development and domain-adaptive training: both TreeLearn and Treeiso would benefit from fine-tuning on representative native-forest {{< acr UAV >}}/{{< acr TLS >}} datasets. Exploring higher-density or full-waveform sensors could also improve structural signal for both instance segmentation and health assessment.
+
+Third, multi-modal fusion warrants focused development: combining spectral information from {{< acr MS >}} orthomosaics with structural data from {{< acr LiDAR >}} point clouds (for example by projecting MS bands onto segmented tree point clouds) is a promising avenue shown to be viable in prior work [@briechleClassificationTree2020].
+
+Finally, operational deployment should prioritise integration with {{< acr SDM >}} outputs to guide targeted UAV surveys and standardise radiometric calibration workflows across sites to reduce multi-site generalisation issues.
 
 # Conclusions
 

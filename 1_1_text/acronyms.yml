@@ -66,9 +66,6 @@ acronyms:
       longname: digital terrain model
     - shortname: DSM
       longname: digital surface model
-    - shortname: WGS84
-      longname: World Geodetic System 1984
-      style: shortnolong-short
     - shortname: CRP
       longname: Calibrated Reference Panel
     - shortname: M3M
@@ -101,16 +98,16 @@ acronyms:
     - shortname: NIR
       longname: near-infrared
     - shortname: NDVI
-      longname: normalized difference vegetation index
+      longname: normalised difference vegetation index
       style: shortnolong-short
     - shortname: RENDVI
-      longname: red edge normalized difference vegetation index
+      longname: red edge normalised difference vegetation index
       style: shortnolong-short
     - shortname: REDVI
       longname: red edge difference vegetation index
       style: shortnolong-short
     - shortname: NGRDI
-      longname: normalized green-red difference index
+      longname: normalised green-red difference index
       style: shortnolong-short
     
 
@@ -151,6 +148,7 @@ acronyms:
       style: shortnolong-short
     - shortname: SGD
       longname: stochastic gradient descent
+      style: long-long
     - shortname: F1
       longname: The harmonic mean of precision and recall, used as a performance metric for classification models.
       style: shortnolong-short

@@ -9,21 +9,17 @@ project:
   render:
     - "index.qmd" # this will render all .qmd files in your project
     - "1_1_text/index.qmd" # this will render all .qmd files in the 1_1_text folder and its subfolders
-    - "1_4_pdf/index.qmd"
-    - "1_4_pdf/complete_thesis.qmd"
+    # - "1_4_pdf/index.qmd"
+    # - "1_4_pdf/complete_thesis.qmd"
     #- "1_8_presentations/index.qmd"
     #- "1_9_documentation/index.qmd"
   # check https://quarto.org/docs/websites/index.html#render-targets for more information
 
-author: Robin Pfaff
-title: "Myrtle Rust"
-date: "2025-12"
+title: "Home"
 date-format: "YYYY-MM"
 number-depth: 3
 bibliography: 2_4_bibliography/myrtle_rust_corrected.bib
 csl: 2_4_bibliography/apa.csl
-nocite: |
-  @Austropucciniapsidii2017, @Syzygiummaire1979, @djiZenmuseL2, @beresfordSymptomdevelopment2020
 filters:
   - 2_4_bibliography/convert_wikilinks.py
   - acronyms
@@ -36,10 +32,7 @@ jupyter: python3
 
 website: # Here are some settings for your website
 # mind the indentation of everything below this line
-  comments: 
-    hypothesis: # allows to add comments to your website using https://web.hypothes.is/
-      theme: clean
-      openSidebar: false
+
 
   twitter-card: true # makes pretty link previews when sharing on Twitter
   search: false # false, because your website will likely not be huge
@@ -69,7 +62,7 @@ website: # Here are some settings for your website
   site-url: "https://pfaffrob.github.io"
   
   # This is the name of your website as it will appear on the browser tab/ search engines
-  title: "Myrtle Rust"
+  title: "Home"
 
 
   navbar: # the navbar is the navigation menu at the top of your website
@@ -83,10 +76,10 @@ website: # Here are some settings for your website
     # essentially, you create a folder with the name of the page and put an index.qmd file in it
     # this helps keep your project organized, and makes your links look cleaner
     left:
-      - href: index.qmd
-        text: "Home"
-      # - href: 1_1_text/index.qmd
-      #   text: "Text"
+      # - href: index.qmd
+      #   text: "Home"
+      - href: 1_1_text/index.qmd
+        text: "Master Thesis"
       # - text: "Research Sites"  
       #   menu:
       #     - text: "Research Sites"
@@ -95,8 +88,8 @@ website: # Here are some settings for your website
       #       href: 3_3_mission_planning/RS3_guide.qmd
       # - href: 1_2_meetings/index.qmd
       #   text: "Meetings"
-      - href: 1_4_pdf/index.qmd
-        text: "PDF"
+      # - href: 1_4_pdf/index.qmd
+      #   text: "PDF"
       # - href: 1_8_presentations/index.qmd
       #   text: "Presentations"
       # - href: 3_4_contacts/contacts.qmd

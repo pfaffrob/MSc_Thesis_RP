@@ -1,31 +1,48 @@
 ---
-title: "In-situ aerial mapping of New Zealand Myrtaceae affected by Myrtle Rust (Austropuccinia psidii) using deep learning"
+title: "In-situ aerial mapping of New Zealand Myrtaceae affected by Myrtle Rust (*Austropuccinia psidii*) using deep learning"
 description: "Some information you want search engines to know about"
-
+date: 2026-05
 format:
   html:
     page-layout: full
     number-sections: true
     number-depth: 3
+
+nocite: |
+  @Austropucciniapsidii2017, @Syzygiummaire1979, @djiZenmuseL2, @beresfordSymptomdevelopment2020
 ---
-```{python}
 
-# {{< include 00_abstract.qmd >}}
-
-
-
-# {{< include 01_introduction.qmd >}}
-
-
-# {{< include 02_method.qmd >}}
-# {{< include 03_results.qmd >}}
-# {{< include 04_discussion.qmd >}}
-# {{< include 05_conclusions.qmd >}}
+<div style="margin: 1rem 0 2rem 0;">
+  <a href="Theses_Robin_Pfaff_amendments.pdf" class="btn btn-primary" download="complete_thesis.pdf">
+    Download PDF
+  </a>
+</div>
 
 
+::: {.callout-warning}
+
+Please note that the thesis on this site is only a beta version. While it contains the same contents, some parts of the formating (mainly figures and links) are not yet optimized. The submitted and published version of the thesis can be downloaded above as pdf file or via [AUT's library catalogue](http://hdl.handle.net/10292/21429).
+
+:::
+
+
+{{< include 00_abstract.qmd >}}
+
+
+
+{{< include 01_introduction.qmd >}}
+
+{{< include 01_literature_review.qmd >}}
+
+
+{{< include 02_method.qmd >}}
+{{< include 03_results.qmd >}}
+{{< include 04_discussion.qmd >}}
+{{< include 05_conclusions.qmd >}}
 
 
 
 
-# {{< include 06_annex.qmd >}}
-```
+
+
+{{< include 06_annex.qmd >}}

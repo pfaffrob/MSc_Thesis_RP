@@ -162,6 +162,7 @@ I would like to thank the following people who provided guidance and support dur
 \newpage
 
 {{< include ../1_1_text/01_introduction.qmd >}}
+{{< include ../1_1_text/01_literature_review.qmd >}}
 {{< include ../1_1_text/02_method.qmd >}}
 
 
